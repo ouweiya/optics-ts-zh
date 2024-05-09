@@ -341,7 +341,7 @@
         <li class="md-nav__item">
   <a href="#lens" class="md-nav__link">
     <span class="md-ellipsis">
-      镜头
+      Lens
     </span>
   </a>
   
@@ -359,7 +359,7 @@
         <li class="md-nav__item">
   <a href="#removable-optics" class="md-nav__link">
     <span class="md-ellipsis">
-      可移除的光学元素
+      可拆卸光学器件
     </span>
   </a>
   
@@ -588,7 +588,7 @@
         <li class="md-nav__item">
   <a href="#lens" class="md-nav__link">
     <span class="md-ellipsis">
-      镜头
+      Lens
     </span>
   </a>
   
@@ -606,7 +606,7 @@
         <li class="md-nav__item">
   <a href="#removable-optics" class="md-nav__link">
     <span class="md-ellipsis">
-      可移除的光学元素
+      可拆卸光学器件
     </span>
   </a>
   
@@ -657,11 +657,11 @@
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">O</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;optics-ts/standalone&#39;</span>
 </code></pre></div>
 <p>查看<a href="../two-syntaxes/">两种语法</a>了解两者之间的区别，以及应该选择哪一种。以下所有的描述和示例都将以两种语法给出。</p>
-<h2 id="lens">镜头<a class="headerlink" href="#lens" title="Permanent link">#</a></h2>
+<h2 id="lens">Lens<a class="headerlink" href="#lens" title="Permanent link">#</a></h2>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">方法链</label><label for="__tabbed_1_2">独立</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>镜头是你将要使用的最常见的光学元素。你可以通过调用 <code>optic()</code> 为一个数据结构创建一个光学元素，并通过 <code>prop</code> 将其转换为一个关注对象属性的镜头：</p>
+<p>Lens(透镜)是你将要使用的最常见的光学器件。你可以通过调用 <code>optic()</code> 为一个数据结构创建一个光学器件，并通过 <code>prop</code> 将其转换为一个关注对象属性的镜头：</p>
 <div class="highlight"><pre><span></span><code><span class="kr">type</span><span class="w"> </span><span class="nx">Data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">bar</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span>
 <span class="w">  </span><span class="nx">other</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span>
@@ -702,7 +702,7 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>镜头是你将要使用的最常见的光学元素。你可以创建一个关注对象属性的镜头：</p>
+<p>Lens(透镜)是你将要使用的最常见的光学器件。你可以创建一个关注对象属性的镜头：</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">foo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">prop</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">)</span>
 </code></pre></div>
 <p><code>foo</code> 现在是一个关注任何给定对象的 <code>foo</code> 属性的镜头。</p>
@@ -739,32 +739,28 @@
 </div>
 </div>
 </div>
-<p>通过光学元素写入总是会创建一个新的数据结构，而不是就地修改现有的数据结构，只复制所需的部分。换句话说，数据是不可变的。</p>
+<p>通过光学器件写入总是会创建一个新的数据结构，而不是就地修改现有的数据结构，只复制所需的部分。<strong>换句话说，数据是不可变的</strong>。</p>
 <h2 id="prism">Prism<a class="headerlink" href="#prism" title="Permanent link">#</a></h2>
 <p>透镜非常适合聚焦到更大结构的一部分。棱镜很像透镜，但它们不一定匹配任何东西，即它们可以有零焦点。</p>
 <p>一个实际的例子是聚焦到联合类型的一个分支。在这里，<code>User.age</code>字段可以是<code>number</code>或<code>undefined</code>。使用<code>optional</code>棱镜，我们只在值为<code>number</code>时聚焦，当它为<code>undefined</code>时不做任何事情：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">方法链</label><label for="__tabbed_2_2">独立</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-type User = {
-    name: string
-    age?: number | undefined
-}
+<div class="highlight"><pre><span></span><code><span class="kr">type</span><span class="w"> </span><span class="nx">User</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span>
+<span class="w">    </span><span class="nx">age?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">undefined</span>
+<span class="p">}</span>
 
-const age = O.optic&lt;User&gt;().prop(&#39;age&#39;).optional()
-```
+<span class="kd">const</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">optic</span><span class="o">&lt;</span><span class="nx">User</span><span class="o">&gt;</span><span class="p">().</span><span class="nx">prop</span><span class="p">(</span><span class="s1">&#39;age&#39;</span><span class="p">).</span><span class="nx">optional</span><span class="p">()</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-type User = {
-    name: string
-    age?: number | undefined
-}
+<div class="highlight"><pre><span></span><code><span class="kr">type</span><span class="w"> </span><span class="nx">User</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span>
+<span class="w">    </span><span class="nx">age?</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kc">undefined</span>
+<span class="p">}</span>
 
-const age = O.compose(&#39;age&#39;, O.optional)
-```
+<span class="kd">const</span><span class="w"> </span><span class="nx">age</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">compose</span><span class="p">(</span><span class="s1">&#39;age&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">optional</span><span class="p">)</span>
 </code></pre></div>
 </div>
 </div>
@@ -773,39 +769,35 @@ const age = O.compose(&#39;age&#39;, O.optional)
 <div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">方法链</label><label for="__tabbed_3_2">独立</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-const userWithAge: User = {
-    name: &#39;Betty&#39;,
-    age: 42,
-}
-O.preview(age)(userWithAge)
-// 42
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">userWithAge</span><span class="o">:</span><span class="w"> </span><span class="kt">User</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Betty&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="kt">42</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="nx">O</span><span class="p">.</span><span class="nx">preview</span><span class="p">(</span><span class="nx">age</span><span class="p">)(</span><span class="nx">userWithAge</span><span class="p">)</span>
+<span class="c1">// 42</span>
 
-const userWithoutAge: User = {
-    name: &#39;Max&#39;,
-    age: undefined,
-}
-O.preview(age)(userWithoutAge)
-// undefined
-```
+<span class="kd">const</span><span class="w"> </span><span class="nx">userWithoutAge</span><span class="o">:</span><span class="w"> </span><span class="kt">User</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Max&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="kt">undefined</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="nx">O</span><span class="p">.</span><span class="nx">preview</span><span class="p">(</span><span class="nx">age</span><span class="p">)(</span><span class="nx">userWithoutAge</span><span class="p">)</span>
+<span class="c1">// undefined</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-const userWithAge: User = {
-    name: &#39;Betty&#39;,
-    age: 42,
-}
-O.preview(age, userWithAge)
-// 42
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">userWithAge</span><span class="o">:</span><span class="w"> </span><span class="kt">User</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Betty&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="kt">42</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="nx">O</span><span class="p">.</span><span class="nx">preview</span><span class="p">(</span><span class="nx">age</span><span class="p">,</span><span class="w"> </span><span class="nx">userWithAge</span><span class="p">)</span>
+<span class="c1">// 42</span>
 
-const userWithoutAge: User = {
-    name: &#39;Max&#39;,
-    age: undefined,
-}
-O.preview(age, userWithoutAge)
-// undefined
-```
+<span class="kd">const</span><span class="w"> </span><span class="nx">userWithoutAge</span><span class="o">:</span><span class="w"> </span><span class="kt">User</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Max&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">age</span><span class="o">:</span><span class="w"> </span><span class="kt">undefined</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="nx">O</span><span class="p">.</span><span class="nx">preview</span><span class="p">(</span><span class="nx">age</span><span class="p">,</span><span class="w"> </span><span class="nx">userWithoutAge</span><span class="p">)</span>
+<span class="c1">// undefined</span>
 </code></pre></div>
 </div>
 </div>
@@ -814,35 +806,31 @@ O.preview(age, userWithoutAge)
 <div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">方法链</label><label for="__tabbed_4_2">独立</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-O.modify(age)((n) =&gt; n + 1)(userWithAge)
-// {
-//   name: &#39;Betty&#39;,
-//   age: 43,
-// }
+<div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">modify</span><span class="p">(</span><span class="nx">age</span><span class="p">)((</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">)(</span><span class="nx">userWithAge</span><span class="p">)</span>
+<span class="c1">// {</span>
+<span class="c1">//   name: &#39;Betty&#39;,</span>
+<span class="c1">//   age: 43,</span>
+<span class="c1">// }</span>
 
-O.set(age)(60)(userWithoutAge)
-// {
-//   name: &#39;Max&#39;,
-//   age: undefined,
-// }
-```
+<span class="nx">O</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">age</span><span class="p">)(</span><span class="mf">60</span><span class="p">)(</span><span class="nx">userWithoutAge</span><span class="p">)</span>
+<span class="c1">// {</span>
+<span class="c1">//   name: &#39;Max&#39;,</span>
+<span class="c1">//   age: undefined,</span>
+<span class="c1">// }</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-O.modify(age, (n) =&gt; n + 1, userWithAge)
-// {
-//   name: &#39;Betty&#39;,
-//   age: 43,
-// }
+<div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">modify</span><span class="p">(</span><span class="nx">age</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="nx">userWithAge</span><span class="p">)</span>
+<span class="c1">// {</span>
+<span class="c1">//   name: &#39;Betty&#39;,</span>
+<span class="c1">//   age: 43,</span>
+<span class="c1">// }</span>
 
-O.set(age, 60, userWithoutAge)
-// {
-//   name: &#39;Max&#39;,
-//   age: undefined,
-// }
-```
+<span class="nx">O</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">age</span><span class="p">,</span><span class="w"> </span><span class="mf">60</span><span class="p">,</span><span class="w"> </span><span class="nx">userWithoutAge</span><span class="p">)</span>
+<span class="c1">// {</span>
+<span class="c1">//   name: &#39;Max&#39;,</span>
+<span class="c1">//   age: undefined,</span>
+<span class="c1">// }</span>
 </code></pre></div>
 </div>
 </div>
@@ -866,76 +854,68 @@ O.set(age, 60, userWithoutAge)
 <div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">方法链</label><label for="__tabbed_5_2">独立</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-const rectWidth = O.optic&lt;Shape&gt;().guard(isRectangle).prop(&#39;width&#39;)
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">rectWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">optic</span><span class="o">&lt;</span><span class="nx">Shape</span><span class="o">&gt;</span><span class="p">().</span><span class="nx">guard</span><span class="p">(</span><span class="nx">isRectangle</span><span class="p">).</span><span class="nx">prop</span><span class="p">(</span><span class="s1">&#39;width&#39;</span><span class="p">)</span>
 
-O.preview(rectWidth)({ kind: &#39;circle&#39;, radius: 10 })
-// undefined
+<span class="nx">O</span><span class="p">.</span><span class="nx">preview</span><span class="p">(</span><span class="nx">rectWidth</span><span class="p">)({</span><span class="w"> </span><span class="nx">kind</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;circle&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">radius</span><span class="o">:</span><span class="w"> </span><span class="kt">10</span><span class="w"> </span><span class="p">})</span>
+<span class="c1">// undefined</span>
 
-O.preview(rectWidth)({ kind: &#39;rectangle&#39;, width: 5, height: 7 })
-// 5
+<span class="nx">O</span><span class="p">.</span><span class="nx">preview</span><span class="p">(</span><span class="nx">rectWidth</span><span class="p">)({</span><span class="w"> </span><span class="nx">kind</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rectangle&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="kt">5</span><span class="p">,</span><span class="w"> </span><span class="nx">height</span><span class="o">:</span><span class="w"> </span><span class="kt">7</span><span class="w"> </span><span class="p">})</span>
+<span class="c1">// 5</span>
 
-O.modify(rectWidth)((w) =&gt; w * 2)({ kind: &#39;rectangle&#39;, width: 5, height: 7 })
-// { kind: &#39;rectangle&#39;, width: 10, height: 7 })
-```
+<span class="nx">O</span><span class="p">.</span><span class="nx">modify</span><span class="p">(</span><span class="nx">rectWidth</span><span class="p">)((</span><span class="nx">w</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">w</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">2</span><span class="p">)({</span><span class="w"> </span><span class="nx">kind</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rectangle&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="kt">5</span><span class="p">,</span><span class="w"> </span><span class="nx">height</span><span class="o">:</span><span class="w"> </span><span class="kt">7</span><span class="w"> </span><span class="p">})</span>
+<span class="c1">// { kind: &#39;rectangle&#39;, width: 10, height: 7 })</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-const rectWidth = O.compose(O.guard(isRectangle), &#39;width&#39;)
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">rectWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">compose</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">guard</span><span class="p">(</span><span class="nx">isRectangle</span><span class="p">),</span><span class="w"> </span><span class="s1">&#39;width&#39;</span><span class="p">)</span>
 
-O.preview(rectWidth, { kind: &#39;circle&#39;, radius: 10 })
-// undefined
+<span class="nx">O</span><span class="p">.</span><span class="nx">preview</span><span class="p">(</span><span class="nx">rectWidth</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">kind</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;circle&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">radius</span><span class="o">:</span><span class="w"> </span><span class="kt">10</span><span class="w"> </span><span class="p">})</span>
+<span class="c1">// undefined</span>
 
-O.preview(rectWidth, { kind: &#39;rectangle&#39;, width: 5, height: 7 })
-// 5
+<span class="nx">O</span><span class="p">.</span><span class="nx">preview</span><span class="p">(</span><span class="nx">rectWidth</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">kind</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rectangle&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="kt">5</span><span class="p">,</span><span class="w"> </span><span class="nx">height</span><span class="o">:</span><span class="w"> </span><span class="kt">7</span><span class="w"> </span><span class="p">})</span>
+<span class="c1">// 5</span>
 
-O.modify(rectWidth, (w) =&gt; w * 2, { kind: &#39;rectangle&#39;, width: 5, height: 7 })
-// { kind: &#39;rectangle&#39;, width: 10, height: 7 })
-```
+<span class="nx">O</span><span class="p">.</span><span class="nx">modify</span><span class="p">(</span><span class="nx">rectWidth</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">w</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">w</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">kind</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;rectangle&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">width</span><span class="o">:</span><span class="w"> </span><span class="kt">5</span><span class="p">,</span><span class="w"> </span><span class="nx">height</span><span class="o">:</span><span class="w"> </span><span class="kt">7</span><span class="w"> </span><span class="p">})</span>
+<span class="c1">// { kind: &#39;rectangle&#39;, width: 10, height: 7 })</span>
 </code></pre></div>
 </div>
 </div>
 </div>
 <p>注意，上面我们如何将<code>guard</code>棱镜与<code>prop</code>透镜组合。这产生了一个棱镜，所以我们使用<code>preview</code>来通过它阅读。查看<a href="../reference-intro/#rules-of-composition">组合规则</a>以获取更多信息。</p>
-<h2 id="removable-optics">可移除的光学元素<a class="headerlink" href="#removable-optics" title="Permanent link">#</a></h2>
-<p>有些光学元素是可移除的。这意味着它们聚焦到容器（例如，数组）的一个元素，并且你可以从容器中移除该元素。</p>
+<h2 id="removable-optics">可拆卸光学器件<a class="headerlink" href="#removable-optics" title="Permanent link">#</a></h2>
+<p>有些光学器件是可拆卸的。这意味着它们聚焦到容器（例如，数组）的一个元素，并且你可以从容器中移除该器件。</p>
 <p><code>at</code>是一个可移除的棱镜。它聚焦到数组的一个索引，并且也让你可以移除该索引：</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">方法链</label><label for="__tabbed_6_2">独立</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-interface User {
-    name: string
-}
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span><span class="w"> </span><span class="nx">User</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span>
+<span class="p">}</span>
 
-const threeUsers: User[] = [
-    { name: &#39;Max&#39; },
-    { name: &#39;Betty&#39; },
-    { name: &#39;Alice&#39; },
-]
+<span class="kd">const</span><span class="w"> </span><span class="nx">threeUsers</span><span class="o">:</span><span class="w"> </span><span class="kt">User</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Max&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Betty&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Alice&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="p">]</span>
 
-const secondUser = O.optic&lt;User[]&gt;().at(1)
-O.remove(secondUser)(threeUsers)
-// [{ name: &#39;Max&#39; }, { name: &#39;Alice&#39; }]
-```
+<span class="kd">const</span><span class="w"> </span><span class="nx">secondUser</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">optic</span><span class="o">&lt;</span><span class="nx">User</span><span class="p">[]</span><span class="o">&gt;</span><span class="p">().</span><span class="nx">at</span><span class="p">(</span><span class="mf">1</span><span class="p">)</span>
+<span class="nx">O</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="nx">secondUser</span><span class="p">)(</span><span class="nx">threeUsers</span><span class="p">)</span>
+<span class="c1">// [{ name: &#39;Max&#39; }, { name: &#39;Alice&#39; }]</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-interface User {
-    name: string
-}
+<div class="highlight"><pre><span></span><code><span class="kd">interface</span><span class="w"> </span><span class="nx">User</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span>
+<span class="p">}</span>
 
-const threeUsers: User[] = [
-    { name: &#39;Max&#39; },
-    { name: &#39;Betty&#39; },
-    { name: &#39;Alice&#39; },
-]
+<span class="kd">const</span><span class="w"> </span><span class="nx">threeUsers</span><span class="o">:</span><span class="w"> </span><span class="kt">User</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Max&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Betty&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Alice&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="p">]</span>
 
-O.remove(O.at(1), threeUsers)
-// [{ name: &#39;Max&#39; }, { name: &#39;Alice&#39; }]
-```
+<span class="nx">O</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">at</span><span class="p">(</span><span class="mf">1</span><span class="p">),</span><span class="w"> </span><span class="nx">threeUsers</span><span class="p">)</span>
+<span class="c1">// [{ name: &#39;Max&#39; }, { name: &#39;Alice&#39; }]</span>
 </code></pre></div>
 </div>
 </div>
@@ -944,21 +924,17 @@ O.remove(O.at(1), threeUsers)
 <div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">方法链</label><label for="__tabbed_7_2">独立</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-const oneUser: User[] = [{ name: &#39;Max&#39; }]
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">oneUser</span><span class="o">:</span><span class="w"> </span><span class="kt">User</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Max&#39;</span><span class="w"> </span><span class="p">}]</span>
 
-O.remove(secondUser)(oneUser)
-// [{ name: &#39;Max&#39; }]
-```
+<span class="nx">O</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="nx">secondUser</span><span class="p">)(</span><span class="nx">oneUser</span><span class="p">)</span>
+<span class="c1">// [{ name: &#39;Max&#39; }]</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-const oneUser: User[] = [{ name: &#39;Max&#39; }]
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">oneUser</span><span class="o">:</span><span class="w"> </span><span class="kt">User</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Max&#39;</span><span class="w"> </span><span class="p">}]</span>
 
-O.remove(O.at(1), oneUser)
-// [{ name: &#39;Max&#39; }]
-```
+<span class="nx">O</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">at</span><span class="p">(</span><span class="mf">1</span><span class="p">),</span><span class="w"> </span><span class="nx">oneUser</span><span class="p">)</span>
+<span class="c1">// [{ name: &#39;Max&#39; }]</span>
 </code></pre></div>
 </div>
 </div>
@@ -969,28 +945,24 @@ O.remove(O.at(1), oneUser)
 <div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">方法链</label><label for="__tabbed_8_2">独立</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-type Person {
-    name: string
-    friends: Person[]
-}
+<div class="highlight"><pre><span></span><code><span class="kr">type</span><span class="w"> </span><span class="nx">Person</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span>
+<span class="w">    </span><span class="nx">friends</span><span class="o">:</span><span class="w"> </span><span class="kt">Person</span><span class="p">[]</span>
+<span class="p">}</span>
 
-const friendsNames = O.optic&lt;Person&gt;()
-    .prop(&#39;friends&#39;)
-    .elems()
-    .prop(&#39;name&#39;)
-```
+<span class="kd">const</span><span class="w"> </span><span class="nx">friendsNames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">optic</span><span class="o">&lt;</span><span class="nx">Person</span><span class="o">&gt;</span><span class="p">()</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">prop</span><span class="p">(</span><span class="s1">&#39;friends&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">elems</span><span class="p">()</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">prop</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-type Person {
-    name: string
-    friends: Person[]
-}
+<div class="highlight"><pre><span></span><code><span class="kr">type</span><span class="w"> </span><span class="nx">Person</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span>
+<span class="w">    </span><span class="nx">friends</span><span class="o">:</span><span class="w"> </span><span class="kt">Person</span><span class="p">[]</span>
+<span class="p">}</span>
 
-const friendsNames = O.compose(&#39;friends&#39;, O.elems, &#39;name&#39;)
-```
+<span class="kd">const</span><span class="w"> </span><span class="nx">friendsNames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">compose</span><span class="p">(</span><span class="s1">&#39;friends&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">elems</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;name&#39;</span><span class="p">)</span>
 </code></pre></div>
 </div>
 </div>
@@ -999,25 +971,21 @@ const friendsNames = O.compose(&#39;friends&#39;, O.elems, &#39;name&#39;)
 <div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">方法链</label><label for="__tabbed_9_2">独立</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-const john = { name: &#39;John&#39;, friends: [] }
-const bruce = { name: &#39;Bruce&#39;, friends: [] }
-const amy = { name: &#39;Amy&#39;, friends: [john, bruce] }
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">john</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;John&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">friends</span><span class="o">:</span><span class="w"> </span><span class="p">[]</span><span class="w"> </span><span class="p">}</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">bruce</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Bruce&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">friends</span><span class="o">:</span><span class="w"> </span><span class="p">[]</span><span class="w"> </span><span class="p">}</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">amy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Amy&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">friends</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">john</span><span class="p">,</span><span class="w"> </span><span class="nx">bruce</span><span class="p">]</span><span class="w"> </span><span class="p">}</span>
 
-O.collect(friendsNames)(amy)
-// [ &#39;John&#39;, &#39;Bruce&#39; ]
-```
+<span class="nx">O</span><span class="p">.</span><span class="nx">collect</span><span class="p">(</span><span class="nx">friendsNames</span><span class="p">)(</span><span class="nx">amy</span><span class="p">)</span>
+<span class="c1">// [ &#39;John&#39;, &#39;Bruce&#39; ]</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-const john = { name: &#39;John&#39;, friends: [] }
-const bruce = { name: &#39;Bruce&#39;, friends: [] }
-const amy = { name: &#39;Amy&#39;, friends: [john, bruce] }
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">john</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;John&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">friends</span><span class="o">:</span><span class="w"> </span><span class="p">[]</span><span class="w"> </span><span class="p">}</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">bruce</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Bruce&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">friends</span><span class="o">:</span><span class="w"> </span><span class="p">[]</span><span class="w"> </span><span class="p">}</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">amy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Amy&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">friends</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="nx">john</span><span class="p">,</span><span class="w"> </span><span class="nx">bruce</span><span class="p">]</span><span class="w"> </span><span class="p">}</span>
 
-O.collect(friendsNames, amy)
-// [ &#39;John&#39;, &#39;Bruce&#39; ]
-```
+<span class="nx">O</span><span class="p">.</span><span class="nx">collect</span><span class="p">(</span><span class="nx">friendsNames</span><span class="p">,</span><span class="w"> </span><span class="nx">amy</span><span class="p">)</span>
+<span class="c1">// [ &#39;John&#39;, &#39;Bruce&#39; ]</span>
 </code></pre></div>
 </div>
 </div>
@@ -1026,29 +994,25 @@ O.collect(friendsNames, amy)
 <div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">方法链</label><label for="__tabbed_10_2">独立</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-O.modify(friendsNames)((name) =&gt; `${name} Wayne`)(amy)
-// {
-//   name: &#39;Amy&#39;,
-//   friends: [
-//     { name: &#39;John Wayne&#39;, friends: [] },
-//     { name: &#39;Bruce Wayne&#39;, friends: [] },
-//   ],
-// }
-```
+<div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">modify</span><span class="p">(</span><span class="nx">friendsNames</span><span class="p">)((</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb"> Wayne`</span><span class="p">)(</span><span class="nx">amy</span><span class="p">)</span>
+<span class="c1">// {</span>
+<span class="c1">//   name: &#39;Amy&#39;,</span>
+<span class="c1">//   friends: [</span>
+<span class="c1">//     { name: &#39;John Wayne&#39;, friends: [] },</span>
+<span class="c1">//     { name: &#39;Bruce Wayne&#39;, friends: [] },</span>
+<span class="c1">//   ],</span>
+<span class="c1">// }</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-O.modify(friendsNames, (name) =&gt; `${name} Wayne`, amy)
-// {
-//   name: &#39;Amy&#39;,
-//   friends: [
-//     { name: &#39;John Wayne&#39;, friends: [] },
-//     { name: &#39;Bruce Wayne&#39;, friends: [] },
-//   ],
-// }
-```
+<div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">modify</span><span class="p">(</span><span class="nx">friendsNames</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">name</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="sb">`</span><span class="si">${</span><span class="nx">name</span><span class="si">}</span><span class="sb"> Wayne`</span><span class="p">,</span><span class="w"> </span><span class="nx">amy</span><span class="p">)</span>
+<span class="c1">// {</span>
+<span class="c1">//   name: &#39;Amy&#39;,</span>
+<span class="c1">//   friends: [</span>
+<span class="c1">//     { name: &#39;John Wayne&#39;, friends: [] },</span>
+<span class="c1">//     { name: &#39;Bruce Wayne&#39;, friends: [] },</span>
+<span class="c1">//   ],</span>
+<span class="c1">// }</span>
 </code></pre></div>
 </div>
 </div>
@@ -1058,26 +1022,22 @@ O.modify(friendsNames, (name) =&gt; `${name} Wayne`, amy)
 <div class="tabbed-set tabbed-alternate" data-tabs="11:2"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">方法链</label><label for="__tabbed_11_2">独立</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-const even = O.optic&lt;number[]&gt;()
-    .elems()
-    .when((n) =&gt; n % 2 === 0)
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">even</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">optic</span><span class="o">&lt;</span><span class="kt">number</span><span class="p">[]</span><span class="o">&gt;</span><span class="p">()</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">elems</span><span class="p">()</span>
+<span class="w">    </span><span class="p">.</span><span class="nx">when</span><span class="p">((</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span>
 
-O.modify(even)((n) =&gt; -n)([1, 2, 3, 4, 5])
-// [1, -2, 3, -4, 5]
-```
+<span class="nx">O</span><span class="p">.</span><span class="nx">modify</span><span class="p">(</span><span class="nx">even</span><span class="p">)((</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="o">-</span><span class="nx">n</span><span class="p">)([</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">])</span>
+<span class="c1">// [1, -2, 3, -4, 5]</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-const even = O.compose(
-    O.elems,
-    O.when((n: number) =&gt; n % 2 === 0)
-)
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">even</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">compose</span><span class="p">(</span>
+<span class="w">    </span><span class="nx">O</span><span class="p">.</span><span class="nx">elems</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">O</span><span class="p">.</span><span class="nx">when</span><span class="p">((</span><span class="nx">n</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">n</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span>
+<span class="p">)</span>
 
-O.modify(even, (n) =&gt; -n, [1, 2, 3, 4, 5])
-// [1, -2, 3, -4, 5]
-```
+<span class="nx">O</span><span class="p">.</span><span class="nx">modify</span><span class="p">(</span><span class="nx">even</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="o">-</span><span class="nx">n</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">])</span>
+<span class="c1">// [1, -2, 3, -4, 5]</span>
 </code></pre></div>
 </div>
 </div>
@@ -1086,27 +1046,21 @@ O.modify(even, (n) =&gt; -n, [1, 2, 3, 4, 5])
 <div class="tabbed-set tabbed-alternate" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">方法链</label><label for="__tabbed_12_2">独立</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>光学元素可以是多态的，这意味着你可以通过光学元素改变焦点的类型。由于这是一个相对罕见的用例，如果不小心进行可能会造成混淆，因此使用`optic_`（注意下划线）创建多态光学元素：
-
-```typescript
-type Data = {
-    foo: { bar: string }
-    other: boolean
-}
-const bar = O.optic_&lt;Data&gt;().path(&#39;foo.bar&#39;)
-```
+<p>光学元素可以是多态的，这意味着你可以通过光学元素改变焦点的类型。由于这是一个相对罕见的用例，如果不小心进行可能会造成混淆，因此使用<code>optic_</code>（注意下划线）创建多态光学元素：</p>
+<div class="highlight"><pre><span></span><code><span class="kr">type</span><span class="w"> </span><span class="nx">Data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">bar</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="nx">other</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span>
+<span class="p">}</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">bar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">optic_</span><span class="o">&lt;</span><span class="nx">Data</span><span class="o">&gt;</span><span class="p">().</span><span class="nx">path</span><span class="p">(</span><span class="s1">&#39;foo.bar&#39;</span><span class="p">)</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>光学元素可以是多态的，这意味着你可以通过光学元素改变焦点的类型。
-
-```typescript
-type Data = {
-    foo: { bar: string }
-    other: boolean
-}
-const bar = O.compose(&#39;foo&#39;, &#39;bar&#39;)
-```
+<p>光学元素可以是多态的，这意味着你可以通过光学元素改变焦点的类型。</p>
+<div class="highlight"><pre><span></span><code><span class="kr">type</span><span class="w"> </span><span class="nx">Data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">bar</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="nx">other</span><span class="o">:</span><span class="w"> </span><span class="kt">boolean</span>
+<span class="p">}</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">bar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">compose</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;bar&#39;</span><span class="p">)</span>
 </code></pre></div>
 </div>
 </div>
@@ -1115,40 +1069,33 @@ const bar = O.compose(&#39;foo&#39;, &#39;bar&#39;)
 <div class="tabbed-set tabbed-alternate" data-tabs="13:2"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><input id="__tabbed_13_2" name="__tabbed_13" type="radio" /><div class="tabbed-labels"><label for="__tabbed_13_1">方法链</label><label for="__tabbed_13_2">独立</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-const data: Data = {
-    foo: { bar: &#39;hello there&#39; },
-    other: true,
-}
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kt">Data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">bar</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;hello there&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="nx">other</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="p">,</span>
+<span class="p">}</span>
 
-const updated = O.modify(bar)((str) =&gt; str.length)(data)
-// {
-//   foo: { bar: 11 },
-//   other: true
-// }
-```
-
-这是一个类型安全的操作，即编译器知道`updated.foo.bar`的类型是`number`，编辑器自动完成工作正常，等等。
-
-如果你在`optics-ts`函数的返回值中看到了`DisallowedTypeChange`类型，那就意味着你试图通过非多态（单态）光学元素改变类型。
+<span class="kd">const</span><span class="w"> </span><span class="nx">updated</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">modify</span><span class="p">(</span><span class="nx">bar</span><span class="p">)((</span><span class="nx">str</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">str</span><span class="p">.</span><span class="nx">length</span><span class="p">)(</span><span class="nx">data</span><span class="p">)</span>
+<span class="c1">// {</span>
+<span class="c1">//   foo: { bar: 11 },</span>
+<span class="c1">//   other: true</span>
+<span class="c1">// }</span>
 </code></pre></div>
+<p>这是一个类型安全的操作，即编译器知道<code>updated.foo.bar</code>的类型是<code>number</code>，编辑器自动完成工作正常，等等。</p>
+<p>如果你在<code>optics-ts</code>函数的返回值中看到了<code>DisallowedTypeChange</code>类型，那就意味着你试图通过非多态（单态）光学元素改变类型。</p>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>```typescript
-const data: Data = {
-    foo: { bar: &#39;hello there&#39; },
-    other: true,
-}
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">data</span><span class="o">:</span><span class="w"> </span><span class="kt">Data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">bar</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;hello there&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="nx">other</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="p">,</span>
+<span class="p">}</span>
 
-const updated = O.modify(bar, (str) =&gt; str.length, data)
-// {
-//   foo: { bar: 11 },
-//   other: true
-// }
-```
-
-这是一个类型安全的操作，即编译器知道`updated.foo.bar`的类型是`number`，编辑器自动完成工作正常，等等。
+<span class="kd">const</span><span class="w"> </span><span class="nx">updated</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">modify</span><span class="p">(</span><span class="nx">bar</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">str</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">str</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span><span class="w"> </span><span class="nx">data</span><span class="p">)</span>
+<span class="c1">// {</span>
+<span class="c1">//   foo: { bar: 11 },</span>
+<span class="c1">//   other: true</span>
+<span class="c1">// }</span>
 </code></pre></div>
+<p>这是一个类型安全的操作，即编译器知道<code>updated.foo.bar</code>的类型是<code>number</code>，编辑器自动完成工作正常，等等。</p>
 </div>
 </div>
 </div>
