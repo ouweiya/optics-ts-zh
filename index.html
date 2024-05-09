@@ -26,6 +26,9 @@
     
       <link rel="stylesheet" href="assets/stylesheets/main.66ac8b77.min.css">
       
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
       
 
 
@@ -53,7 +56,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -98,12 +108,38 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              首页
             
           </span>
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -228,7 +264,7 @@
           
   
   <span class="md-ellipsis">
-    Home
+    首页
   </span>
   
 
@@ -239,7 +275,7 @@
         
   
   <span class="md-ellipsis">
-    Home
+    首页
   </span>
   
 
@@ -263,7 +299,7 @@
         <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
-      Example
+      示例
     </span>
   </a>
   
@@ -288,7 +324,7 @@
         
   
   <span class="md-ellipsis">
-    Installation
+    安装
   </span>
   
 
@@ -308,7 +344,7 @@
         
   
   <span class="md-ellipsis">
-    Tutorial
+    教程
   </span>
   
 
@@ -328,7 +364,7 @@
         
   
   <span class="md-ellipsis">
-    The Two Syntaxes
+    两种语法
   </span>
   
 
@@ -360,7 +396,7 @@
             
   
   <span class="md-ellipsis">
-    Reference
+    参考
   </span>
   
 
@@ -370,7 +406,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Reference
+            参考
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -385,7 +421,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction
+    介绍
   </span>
   
 
@@ -406,7 +442,7 @@
         
   
   <span class="md-ellipsis">
-    Method chaining API
+    方法链 API
   </span>
   
 
@@ -427,7 +463,7 @@
         
   
   <span class="md-ellipsis">
-    Standalone API
+    独立API
   </span>
   
 
@@ -448,7 +484,7 @@
         
   
   <span class="md-ellipsis">
-    Interoperability
+    互操作性
   </span>
   
 
@@ -476,7 +512,7 @@
         
   
   <span class="md-ellipsis">
-    Prior art
+    现有技术
   </span>
   
 
@@ -514,7 +550,7 @@
         <li class="md-nav__item">
   <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
-      Example
+      示例
     </span>
   </a>
   
@@ -539,22 +575,21 @@
 
 
 <h1 id="optics-ts">optics-ts<a class="headerlink" href="#optics-ts" title="Permanent link">#</a></h1>
-<p><code>optics-ts</code> provides type-safe, ergonomic, polymorphic optics for TypeScript</p>
+<p><code>optics-ts</code> 为 TypeScript 提供类型安全、符合人体工程学、多态的光学元素</p>
 <ul>
-<li>Many optic types: lens, prism, traversal, getter, affine fold, fold, setter</li>
-<li>Optics for operating on multiple data types: objects, arrays, discriminated
-  unions, strings.</li>
-<li>Removable optics: Allow removing items from containers.</li>
-<li>Ergonomic API: No boilerplate, concise naming.</li>
-<li>Type-safe: The compiler will type check all operations you do. No <code>any</code>, ever.</li>
-<li>Most optics are fully polymorphic: You can write a different data type and
-  still get full type safety.</li>
-<li>Supports both ES6 and CommonJS modules in a single code base.</li>
-<li>Tree shaking support with standalone optics (see
-  <a href="two-syntaxes/">The Two Syntaxes</a>).</li>
+<li>许多光学类型：镜头、棱镜、遍历、获取器、仿射折叠、折叠、设置器</li>
+<li>用于操作多种数据类型的光学元素：对象、数组、歧视联合、字符串。</li>
+<li>可移除的光学元素：允许从容器中移除项目。</li>
+<li>人体工程学 API：无样板文件，简洁的命名。</li>
+<li>类型安全：编译器将对您进行的所有操作进行类型检查。永远不会有 <code>any</code>。</li>
+<li>大多数光学元素都是完全多态的：您可以编写不同的数据类型并仍然获得完全的类型安全性。</li>
+<li>在单一代码库中支持 ES6 和 CommonJS 模块。</li>
+<li>通过独立光学元素支持树摇动（请参见<a href="two-syntaxes/">两种语法</a>）。</li>
 </ul>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">#</a></h2>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Method chaining</label><div class="tabbed-content">
+<h2 id="example">示例<a class="headerlink" href="#example" title="Permanent link">#</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">方法链</label><label for="__tabbed_1_2">独立</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">O</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;optics-ts&#39;</span>
 
 <span class="kr">type</span><span class="w"> </span><span class="nx">Book</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
@@ -565,38 +600,38 @@
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 
-<span class="c1">// Create a lens that focuses on author.name</span>
+<span class="c1">// 创建一个聚焦于 author.name 的镜头</span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">optic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">optic_</span><span class="o">&lt;</span><span class="nx">Book</span><span class="o">&gt;</span><span class="p">()</span>
 <span class="w">  </span><span class="p">.</span><span class="nx">prop</span><span class="p">(</span><span class="s1">&#39;author&#39;</span><span class="p">)</span>
 <span class="w">  </span><span class="p">.</span><span class="nx">prop</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">)</span>
 
-<span class="c1">// This is the input data</span>
+<span class="c1">// 这是输入数据</span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">input</span><span class="o">:</span><span class="w"> </span><span class="kt">Book</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;The Hitchhiker&#39;s Guide to the Galaxy&quot;</span>
+<span class="w">  </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;银河系漫游指南&quot;</span>
 <span class="w">  </span><span class="nx">isbn</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;978-0345391803&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Douglas Adams&quot;</span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;道格拉斯·亚当斯&quot;</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 
-<span class="c1">// Read through the optic</span>
+<span class="c1">// 通过光学元素读取</span>
 <span class="nx">O</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">optic</span><span class="p">)(</span><span class="nx">input</span><span class="p">)</span>
-<span class="c1">// &quot;Douglas Adams&quot;</span>
+<span class="c1">// &quot;道格拉斯·亚当斯&quot;</span>
 
-<span class="c1">// Write through the optic</span>
-<span class="nx">O</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">optic</span><span class="p">)(</span><span class="s2">&quot;Arthur Dent&quot;</span><span class="p">)(</span><span class="nx">input</span><span class="p">)</span>
+<span class="c1">// 通过光学元素写入</span>
+<span class="nx">O</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">optic</span><span class="p">)(</span><span class="s2">&quot;亚瑟·登特&quot;</span><span class="p">)(</span><span class="nx">input</span><span class="p">)</span>
 <span class="c1">// {</span>
-<span class="c1">//   title: &quot;The Hitchhiker’s Guide to the Galaxy&quot;</span>
+<span class="c1">//   title: &quot;银河系漫游指南&quot;</span>
 <span class="c1">//   isbn: &quot;978-0345391803&quot;,</span>
 <span class="c1">//   author: {</span>
-<span class="c1">//     name: &quot;Arthur Dent&quot;</span>
+<span class="c1">//     name: &quot;亚瑟·登特&quot;</span>
 <span class="c1">//   }</span>
 <span class="c1">// }</span>
 
-<span class="c1">// Update the existing value through the optic, while also changing the data type</span>
+<span class="c1">// 通过光学元素更新现有值，同时也改变数据类型</span>
 <span class="nx">O</span><span class="p">.</span><span class="nx">modify</span><span class="p">(</span><span class="nx">optic</span><span class="p">)(</span><span class="nx">str</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">str</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">29</span><span class="p">)(</span><span class="nx">input</span><span class="p">)</span>
 <span class="c1">// {</span>
-<span class="c1">//   title: &quot;The Hitchhiker’s Guide to the Galaxy&quot;</span>
+<span class="c1">//   title: &quot;银河系漫游指南&quot;</span>
 <span class="c1">//   isbn: &quot;978-0345391803&quot;,</span>
 <span class="c1">//   author: {</span>
 <span class="c1">//     name: 42</span>
@@ -604,39 +639,39 @@
 <span class="c1">// }</span>
 </code></pre></div>
 </div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Standalone</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">O</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;optics-ts/standalone&#39;</span>
 
-<span class="c1">// Create a lens that focuses on author.name</span>
+<span class="c1">// 创建一个聚焦于 author.name 的镜头</span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">optic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">compose</span><span class="p">(</span><span class="s1">&#39;author&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;name&#39;</span><span class="p">)</span>
 
-<span class="c1">// This is the input data</span>
+<span class="c1">// 这是输入数据</span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;The Hitchhiker&#39;s Guide to the Galaxy&quot;</span>
+<span class="w">  </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;银河系漫游指南&quot;</span>
 <span class="w">  </span><span class="nx">isbn</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;978-0345391803&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Douglas Adams&quot;</span>
+<span class="w">    </span><span class="nx">name</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;道格拉斯·亚当斯&quot;</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 
-<span class="c1">// Read through the optic</span>
+<span class="c1">// 通过光学元素读取</span>
 <span class="nx">O</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">optic</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">)</span>
-<span class="c1">// &quot;Douglas Adams&quot;</span>
+<span class="c1">// &quot;道格拉斯·亚当斯&quot;</span>
 
-<span class="c1">// Write through the optic</span>
-<span class="nx">O</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">optic</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Arthur Dent&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">)</span>
+<span class="c1">// 通过光学元素写入</span>
+<span class="nx">O</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">optic</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;亚瑟·登特&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">)</span>
 <span class="c1">// {</span>
-<span class="c1">//   title: &quot;The Hitchhiker’s Guide to the Galaxy&quot;</span>
+<span class="c1">//   title: &quot;银河系漫游指南&quot;</span>
 <span class="c1">//   isbn: &quot;978-0345391803&quot;,</span>
 <span class="c1">//   author: {</span>
-<span class="c1">//     name: &quot;Arthur Dent&quot;</span>
+<span class="c1">//     name: &quot;亚瑟·登特&quot;</span>
 <span class="c1">//   }</span>
 <span class="c1">// }</span>
 
-<span class="c1">// Update the existing value through the optic, while also changing the data type</span>
+<span class="c1">// 通过光学元素更新现有值，同时也改变数据类型</span>
 <span class="nx">O</span><span class="p">.</span><span class="nx">modify</span><span class="p">(</span><span class="nx">optic</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">str</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">str</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">29</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">)</span>
 <span class="c1">// {</span>
-<span class="c1">//   title: &quot;The Hitchhiker’s Guide to the Galaxy&quot;</span>
+<span class="c1">//   title: &quot;银河系漫游指南&quot;</span>
 <span class="c1">//   isbn: &quot;978-0345391803&quot;,</span>
 <span class="c1">//   author: {</span>
 <span class="c1">//     name: 42</span>
@@ -645,8 +680,8 @@
 </code></pre></div>
 </div>
 </div>
-<p>For more information about the differences between the method chaining and
-standalone syntaxes, see <a href="two-syntaxes/">The Two Syntaxes</a>.</p>
+</div>
+<p>有关方法链和独立语法之间的差异的更多信息，请参见<a href="two-syntaxes/">两种语法</a>。</p>
 
 
 
@@ -693,7 +728,7 @@ standalone syntaxes, see <a href="two-syntaxes/">The Two Syntaxes</a>.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.expand"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.expand", "content.code.copy"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="assets/javascripts/bundle.a7c05c9e.min.js"></script>

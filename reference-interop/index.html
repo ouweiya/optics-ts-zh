@@ -22,11 +22,14 @@
     
     
       
-        <title>Interoperability - optics-ts</title>
+        <title>互操作性 - optics-ts</title>
       
     
     
       <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -55,7 +58,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -100,12 +110,38 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Interoperability
+              互操作性
             
           </span>
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -221,7 +257,7 @@
         
   
   <span class="md-ellipsis">
-    Home
+    首页
   </span>
   
 
@@ -241,7 +277,7 @@
         
   
   <span class="md-ellipsis">
-    Installation
+    安装
   </span>
   
 
@@ -261,7 +297,7 @@
         
   
   <span class="md-ellipsis">
-    Tutorial
+    教程
   </span>
   
 
@@ -281,7 +317,7 @@
         
   
   <span class="md-ellipsis">
-    The Two Syntaxes
+    两种语法
   </span>
   
 
@@ -313,7 +349,7 @@
             
   
   <span class="md-ellipsis">
-    Reference
+    参考
   </span>
   
 
@@ -323,7 +359,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Reference
+            参考
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -338,7 +374,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction
+    介绍
   </span>
   
 
@@ -359,7 +395,7 @@
         
   
   <span class="md-ellipsis">
-    Method chaining API
+    方法链 API
   </span>
   
 
@@ -380,7 +416,7 @@
         
   
   <span class="md-ellipsis">
-    Standalone API
+    独立API
   </span>
   
 
@@ -410,7 +446,7 @@
         
   
   <span class="md-ellipsis">
-    Interoperability
+    互操作性
   </span>
   
 
@@ -439,7 +475,7 @@
         
   
   <span class="md-ellipsis">
-    Prior art
+    现有技术
   </span>
   
 
@@ -484,20 +520,16 @@
   
 
 
-<h1 id="interoperability">Interoperability<a class="headerlink" href="#interoperability" title="Permanent link">#</a></h1>
+<h1 id="interoperability">互操作性<a class="headerlink" href="#interoperability" title="Permanent link">#</a></h1>
 <div class="admonition danger">
-<p class="admonition-title">Experimental</p>
-<p>This module is experimental and may receive backwards incompatible changes
-without a corresponding semver bump.</p>
+<p class="admonition-title">实验性</p>
+<p>此模块处于实验阶段，可能会在不对应的semver bump的情况下接收到向后不兼容的更改。</p>
 </div>
-<p>Since optics-ts v2.2.0, there are two syntaxes for optics: <strong>method chaining</strong>
-and <strong>standalone optics</strong>. The <em>interoperability API</em>, documented here, defines
-a bridge between the two syntaxes, giving e.g. library authors the freedom to
-allow their users to use either syntax.</p>
-<p>Everything below assumes the following import:</p>
-<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">I</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="err">&#39;</span><span class="nx">optics</span><span class="o">-</span><span class="nx">ts</span><span class="o">/</span><span class="nx">interop</span>
+<p>自optics-ts v2.2.0起，光学有两种语法：<strong>方法链</strong>和<strong>独立光学</strong>。这里记录的_互操作性API_定义了两种语法之间的桥梁，例如，给予库作者自由，允许他们的用户使用任一种语法。</p>
+<p>以下所有内容都假设有如下导入：</p>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">I</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;optics-ts/interop&#39;</span>
 </code></pre></div>
-<p>This module defines the following functions:</p>
+<p>此模块定义了以下函数：</p>
 <ul>
 <li><code>I.get :: (optic, value) =&gt; value</code></li>
 <li><code>I.preview :: (optic, value) =&gt; value | undefined</code></li>
@@ -505,13 +537,12 @@ allow their users to use either syntax.</p>
 <li><code>I.modify :: (optic, fn, value) =&gt; value</code></li>
 <li><code>I.set :: (optic, fn, value) =&gt; value</code></li>
 </ul>
-<p>The <code>optic</code> parameter for these function can be any of:</p>
+<p>这些函数的<code>optic</code>参数可以是：</p>
 <ul>
-<li>A <a href="../reference-mc/">method chaining</a> optic</li>
-<li>A <a href="../reference-standalone/">standalone</a> optic</li>
+<li><a href="../reference-mc/">方法链</a>光学</li>
+<li><a href="../reference-standalone/">独立</a>光学</li>
 </ul>
-<p>Otherwise the functions work exactly like the corresponding operations in either
-API.</p>
+<p>否则，这些函数的工作方式与任一API中的对应操作完全相同。</p>
 
 
 
@@ -558,7 +589,7 @@ API.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.expand"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.expand", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.a7c05c9e.min.js"></script>

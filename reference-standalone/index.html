@@ -22,11 +22,14 @@
     
     
       
-        <title>Standalone API - optics-ts</title>
+        <title>独立API - optics-ts</title>
       
     
     
       <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -55,7 +58,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -100,12 +110,38 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Standalone API
+              独立API
             
           </span>
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -221,7 +257,7 @@
         
   
   <span class="md-ellipsis">
-    Home
+    首页
   </span>
   
 
@@ -241,7 +277,7 @@
         
   
   <span class="md-ellipsis">
-    Installation
+    安装
   </span>
   
 
@@ -261,7 +297,7 @@
         
   
   <span class="md-ellipsis">
-    Tutorial
+    教程
   </span>
   
 
@@ -281,7 +317,7 @@
         
   
   <span class="md-ellipsis">
-    The Two Syntaxes
+    两种语法
   </span>
   
 
@@ -313,7 +349,7 @@
             
   
   <span class="md-ellipsis">
-    Reference
+    参考
   </span>
   
 
@@ -323,7 +359,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Reference
+            参考
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -338,7 +374,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction
+    介绍
   </span>
   
 
@@ -359,7 +395,7 @@
         
   
   <span class="md-ellipsis">
-    Method chaining API
+    方法链 API
   </span>
   
 
@@ -389,7 +425,7 @@
           
   
   <span class="md-ellipsis">
-    Standalone API
+    独立API
   </span>
   
 
@@ -400,7 +436,7 @@
         
   
   <span class="md-ellipsis">
-    Standalone API
+    独立API
   </span>
   
 
@@ -424,7 +460,7 @@
         <li class="md-nav__item">
   <a href="#typescript-types" class="md-nav__link">
     <span class="md-ellipsis">
-      TypeScript types
+      TypeScript 类型
     </span>
   </a>
   
@@ -433,71 +469,71 @@
         <li class="md-nav__item">
   <a href="#operations" class="md-nav__link">
     <span class="md-ellipsis">
-      Operations
+      操作
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Operations">
+    <nav class="md-nav" aria-label="操作">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#compose" class="md-nav__link">
+  <a href="#compose-compose" class="md-nav__link">
     <span class="md-ellipsis">
-      compose
+      compose {#compose}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#get" class="md-nav__link">
+  <a href="#get-get" class="md-nav__link">
     <span class="md-ellipsis">
-      get
+      get {#get}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#preview" class="md-nav__link">
+  <a href="#preview-preview" class="md-nav__link">
     <span class="md-ellipsis">
-      preview
+      preview {#preview}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#collect" class="md-nav__link">
+  <a href="#collect-collect" class="md-nav__link">
     <span class="md-ellipsis">
-      collect
+      collect {#collect}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#modify" class="md-nav__link">
+  <a href="#modify-modify" class="md-nav__link">
     <span class="md-ellipsis">
-      modify
+      modify {#modify}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#set" class="md-nav__link">
+  <a href="#set-set" class="md-nav__link">
     <span class="md-ellipsis">
-      set
+      set {#set}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#remove" class="md-nav__link">
+  <a href="#remove-remove" class="md-nav__link">
     <span class="md-ellipsis">
-      remove
+      remove {#remove}
     </span>
   </a>
   
@@ -511,26 +547,26 @@
         <li class="md-nav__item">
   <a href="#isomorphisms" class="md-nav__link">
     <span class="md-ellipsis">
-      Isomorphisms
+      同构
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Isomorphisms">
+    <nav class="md-nav" aria-label="同构">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#iso" class="md-nav__link">
+  <a href="#iso-iso" class="md-nav__link">
     <span class="md-ellipsis">
-      iso
+      iso {#iso}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#indexed" class="md-nav__link">
+  <a href="#indexed-indexed" class="md-nav__link">
     <span class="md-ellipsis">
-      indexed
+      indexed {#indexed}
     </span>
   </a>
   
@@ -544,80 +580,80 @@
         <li class="md-nav__item">
   <a href="#lenses" class="md-nav__link">
     <span class="md-ellipsis">
-      Lenses
+      透镜
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Lenses">
+    <nav class="md-nav" aria-label="透镜">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prop" class="md-nav__link">
+  <a href="#prop-prop" class="md-nav__link">
     <span class="md-ellipsis">
-      prop
+      prop {#prop}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#nth" class="md-nav__link">
+  <a href="#nth-nth" class="md-nav__link">
     <span class="md-ellipsis">
-      nth
+      nth {#nth}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pick" class="md-nav__link">
+  <a href="#pick-pick" class="md-nav__link">
     <span class="md-ellipsis">
-      pick
+      pick {#pick}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#filter" class="md-nav__link">
+  <a href="#filter-filter" class="md-nav__link">
     <span class="md-ellipsis">
-      filter
+      filter {#filter}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#valueor" class="md-nav__link">
+  <a href="#valueor-valueor" class="md-nav__link">
     <span class="md-ellipsis">
-      valueOr
+      valueOr {#valueor}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#partsof" class="md-nav__link">
+  <a href="#partsof-partsof" class="md-nav__link">
     <span class="md-ellipsis">
-      partsOf
+      partsOf {#partsof}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#reread-rewrite" class="md-nav__link">
+  <a href="#reread-rewrite-reread-rewrite" class="md-nav__link">
     <span class="md-ellipsis">
-      reread, rewrite
+      reread, rewrite {#reread,-rewrite}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lens" class="md-nav__link">
+  <a href="#lens-lens" class="md-nav__link">
     <span class="md-ellipsis">
-      lens
+      lens {#lens}
     </span>
   </a>
   
@@ -639,63 +675,63 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#optional" class="md-nav__link">
+  <a href="#optional-optional" class="md-nav__link">
     <span class="md-ellipsis">
-      optional
+      optional {#optional}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#guard" class="md-nav__link">
+  <a href="#guard-guard" class="md-nav__link">
     <span class="md-ellipsis">
-      guard
+      guard {#guard}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#at" class="md-nav__link">
+  <a href="#at-at" class="md-nav__link">
     <span class="md-ellipsis">
-      at
+      at {#at}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#head" class="md-nav__link">
+  <a href="#head-head" class="md-nav__link">
     <span class="md-ellipsis">
-      head
+      head {#head}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#atkey" class="md-nav__link">
+  <a href="#atkey-atkey" class="md-nav__link">
     <span class="md-ellipsis">
-      atKey
+      atKey {#atkey}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#find" class="md-nav__link">
+  <a href="#find-find" class="md-nav__link">
     <span class="md-ellipsis">
-      find
+      find {#find}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#when" class="md-nav__link">
+  <a href="#when-when" class="md-nav__link">
     <span class="md-ellipsis">
-      when
+      when {#when}
     </span>
   </a>
   
@@ -717,9 +753,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#elems" class="md-nav__link">
+  <a href="#elems-elems" class="md-nav__link">
     <span class="md-ellipsis">
-      elems
+      elems {#elems}
     </span>
   </a>
   
@@ -741,9 +777,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#to" class="md-nav__link">
+  <a href="#to-to" class="md-nav__link">
     <span class="md-ellipsis">
-      to
+      to {#to}
     </span>
   </a>
   
@@ -765,9 +801,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prependto-appendto" class="md-nav__link">
+  <a href="#prependto-appendto-prependto-appendto" class="md-nav__link">
     <span class="md-ellipsis">
-      prependTo, appendTo
+      prependTo, appendTo {#prependto,-appendto}
     </span>
   </a>
   
@@ -789,18 +825,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#chars" class="md-nav__link">
+  <a href="#chars-chars" class="md-nav__link">
     <span class="md-ellipsis">
-      chars
+      chars {#chars}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#words" class="md-nav__link">
+  <a href="#words-words" class="md-nav__link">
     <span class="md-ellipsis">
-      words
+      words {#words}
     </span>
   </a>
   
@@ -822,18 +858,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#eq" class="md-nav__link">
+  <a href="#eq-eq" class="md-nav__link">
     <span class="md-ellipsis">
-      eq
+      eq {#eq}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pipe" class="md-nav__link">
+  <a href="#pipe-pipe" class="md-nav__link">
     <span class="md-ellipsis">
-      pipe
+      pipe {#pipe}
     </span>
   </a>
   
@@ -864,7 +900,7 @@
         
   
   <span class="md-ellipsis">
-    Interoperability
+    互操作性
   </span>
   
 
@@ -892,7 +928,7 @@
         
   
   <span class="md-ellipsis">
-    Prior art
+    现有技术
   </span>
   
 
@@ -930,7 +966,7 @@
         <li class="md-nav__item">
   <a href="#typescript-types" class="md-nav__link">
     <span class="md-ellipsis">
-      TypeScript types
+      TypeScript 类型
     </span>
   </a>
   
@@ -939,71 +975,71 @@
         <li class="md-nav__item">
   <a href="#operations" class="md-nav__link">
     <span class="md-ellipsis">
-      Operations
+      操作
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Operations">
+    <nav class="md-nav" aria-label="操作">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#compose" class="md-nav__link">
+  <a href="#compose-compose" class="md-nav__link">
     <span class="md-ellipsis">
-      compose
+      compose {#compose}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#get" class="md-nav__link">
+  <a href="#get-get" class="md-nav__link">
     <span class="md-ellipsis">
-      get
+      get {#get}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#preview" class="md-nav__link">
+  <a href="#preview-preview" class="md-nav__link">
     <span class="md-ellipsis">
-      preview
+      preview {#preview}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#collect" class="md-nav__link">
+  <a href="#collect-collect" class="md-nav__link">
     <span class="md-ellipsis">
-      collect
+      collect {#collect}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#modify" class="md-nav__link">
+  <a href="#modify-modify" class="md-nav__link">
     <span class="md-ellipsis">
-      modify
+      modify {#modify}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#set" class="md-nav__link">
+  <a href="#set-set" class="md-nav__link">
     <span class="md-ellipsis">
-      set
+      set {#set}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#remove" class="md-nav__link">
+  <a href="#remove-remove" class="md-nav__link">
     <span class="md-ellipsis">
-      remove
+      remove {#remove}
     </span>
   </a>
   
@@ -1017,26 +1053,26 @@
         <li class="md-nav__item">
   <a href="#isomorphisms" class="md-nav__link">
     <span class="md-ellipsis">
-      Isomorphisms
+      同构
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Isomorphisms">
+    <nav class="md-nav" aria-label="同构">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#iso" class="md-nav__link">
+  <a href="#iso-iso" class="md-nav__link">
     <span class="md-ellipsis">
-      iso
+      iso {#iso}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#indexed" class="md-nav__link">
+  <a href="#indexed-indexed" class="md-nav__link">
     <span class="md-ellipsis">
-      indexed
+      indexed {#indexed}
     </span>
   </a>
   
@@ -1050,80 +1086,80 @@
         <li class="md-nav__item">
   <a href="#lenses" class="md-nav__link">
     <span class="md-ellipsis">
-      Lenses
+      透镜
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Lenses">
+    <nav class="md-nav" aria-label="透镜">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prop" class="md-nav__link">
+  <a href="#prop-prop" class="md-nav__link">
     <span class="md-ellipsis">
-      prop
+      prop {#prop}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#nth" class="md-nav__link">
+  <a href="#nth-nth" class="md-nav__link">
     <span class="md-ellipsis">
-      nth
+      nth {#nth}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pick" class="md-nav__link">
+  <a href="#pick-pick" class="md-nav__link">
     <span class="md-ellipsis">
-      pick
+      pick {#pick}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#filter" class="md-nav__link">
+  <a href="#filter-filter" class="md-nav__link">
     <span class="md-ellipsis">
-      filter
+      filter {#filter}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#valueor" class="md-nav__link">
+  <a href="#valueor-valueor" class="md-nav__link">
     <span class="md-ellipsis">
-      valueOr
+      valueOr {#valueor}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#partsof" class="md-nav__link">
+  <a href="#partsof-partsof" class="md-nav__link">
     <span class="md-ellipsis">
-      partsOf
+      partsOf {#partsof}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#reread-rewrite" class="md-nav__link">
+  <a href="#reread-rewrite-reread-rewrite" class="md-nav__link">
     <span class="md-ellipsis">
-      reread, rewrite
+      reread, rewrite {#reread,-rewrite}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#lens" class="md-nav__link">
+  <a href="#lens-lens" class="md-nav__link">
     <span class="md-ellipsis">
-      lens
+      lens {#lens}
     </span>
   </a>
   
@@ -1145,63 +1181,63 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#optional" class="md-nav__link">
+  <a href="#optional-optional" class="md-nav__link">
     <span class="md-ellipsis">
-      optional
+      optional {#optional}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#guard" class="md-nav__link">
+  <a href="#guard-guard" class="md-nav__link">
     <span class="md-ellipsis">
-      guard
+      guard {#guard}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#at" class="md-nav__link">
+  <a href="#at-at" class="md-nav__link">
     <span class="md-ellipsis">
-      at
+      at {#at}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#head" class="md-nav__link">
+  <a href="#head-head" class="md-nav__link">
     <span class="md-ellipsis">
-      head
+      head {#head}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#atkey" class="md-nav__link">
+  <a href="#atkey-atkey" class="md-nav__link">
     <span class="md-ellipsis">
-      atKey
+      atKey {#atkey}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#find" class="md-nav__link">
+  <a href="#find-find" class="md-nav__link">
     <span class="md-ellipsis">
-      find
+      find {#find}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#when" class="md-nav__link">
+  <a href="#when-when" class="md-nav__link">
     <span class="md-ellipsis">
-      when
+      when {#when}
     </span>
   </a>
   
@@ -1223,9 +1259,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#elems" class="md-nav__link">
+  <a href="#elems-elems" class="md-nav__link">
     <span class="md-ellipsis">
-      elems
+      elems {#elems}
     </span>
   </a>
   
@@ -1247,9 +1283,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#to" class="md-nav__link">
+  <a href="#to-to" class="md-nav__link">
     <span class="md-ellipsis">
-      to
+      to {#to}
     </span>
   </a>
   
@@ -1271,9 +1307,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#prependto-appendto" class="md-nav__link">
+  <a href="#prependto-appendto-prependto-appendto" class="md-nav__link">
     <span class="md-ellipsis">
-      prependTo, appendTo
+      prependTo, appendTo {#prependto,-appendto}
     </span>
   </a>
   
@@ -1295,18 +1331,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#chars" class="md-nav__link">
+  <a href="#chars-chars" class="md-nav__link">
     <span class="md-ellipsis">
-      chars
+      chars {#chars}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#words" class="md-nav__link">
+  <a href="#words-words" class="md-nav__link">
     <span class="md-ellipsis">
-      words
+      words {#words}
     </span>
   </a>
   
@@ -1328,18 +1364,18 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#eq" class="md-nav__link">
+  <a href="#eq-eq" class="md-nav__link">
     <span class="md-ellipsis">
-      eq
+      eq {#eq}
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pipe" class="md-nav__link">
+  <a href="#pipe-pipe" class="md-nav__link">
     <span class="md-ellipsis">
-      pipe
+      pipe {#pipe}
     </span>
   </a>
   
@@ -1368,50 +1404,44 @@
   
 
 
-<h1 id="standalone-api">Standalone API<a class="headerlink" href="#standalone-api" title="Permanent link">#</a></h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Since optics-ts v2.2.0, there are two syntaxes for optics: <strong>method chaining</strong>
-and <strong>standalone optics</strong>. For more information about the differences between
-them, see <a href="../two-syntaxes/">The Two Syntaxes</a>.</p>
+<h1 id="standalone-api">独立API<a class="headerlink" href="#standalone-api" title="Permanent link">#</a></h1>
+<div class="admonition 注意">
+<p class="admonition-title">注意</p>
+<div class="highlight"><pre><span></span><code>自 optics-ts v2.2.0 起，光学有两种语法：**方法链**和**独立光学**。有关它们之间的差异的更多信息，请参阅[两种语法](two-syntaxes.md)。
+</code></pre></div>
 </div>
-<div class="admonition danger">
-<p class="admonition-title">Experimental</p>
-<p>This module is experimental and may receive backwards incompatible changes
-without a corresponding semver bump.</p>
+<div class="admonition 危险">
+<p class="admonition-title">实验性</p>
+<div class="highlight"><pre><span></span><code>此模块是实验性的，可能会接收到向后不兼容的更改，而不会有相应的 semver bump。
+</code></pre></div>
 </div>
-<p>Everything below assumes the following import:</p>
+<p>以下所有内容都假定有以下导入：</p>
 <div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="kr">as</span><span class="w"> </span><span class="nx">O</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;optics-ts/standalone&#39;</span>
 </code></pre></div>
-<h2 id="typescript-types">TypeScript types<a class="headerlink" href="#typescript-types" title="Permanent link">#</a></h2>
-<p>In general, the TypeScript types of optics look like <code>Optic&lt;C, A, T, R&gt;</code>.</p>
+<h2 id="typescript-types">TypeScript 类型<a class="headerlink" href="#typescript-types" title="Permanent link">#</a></h2>
+<p>通常，光学的 TypeScript 类型看起来像 <code>Optic&lt;C, A, T, R&gt;</code>。</p>
 <ul>
 <li>
-<p><code>C</code> is the optic type as a string, e.g. <code>'Lens'</code> or <code>'Prism'</code></p>
+<p><code>C</code> 是光学类型作为字符串，例如 <code>'Lens'</code> 或 <code>'Prism'</code></p>
 </li>
 <li>
-<p><code>A</code> and <code>T</code> encode the optic's read and write direction transforms as
-  "higher-kinded" types</p>
+<p><code>A</code> 和 <code>T</code> 编码光学的读写方向转换为
+    "更高级别的" 类型</p>
 </li>
 <li>
-<p><code>R</code> is <code>true</code> if the optic is removable, and <code>undefined</code> otherwise.</p>
+<p><code>R</code> 是 <code>true</code> 如果光学是可移除的，否则是 <code>undefined</code>。</p>
 </li>
 </ul>
-<p>In the following, we leave the exact type signatures out for clarity, using a
-hand-wavy pseudo syntax instead. The optic descriptions try to make it clear how
-optics and functions operate.</p>
-<p>Interested readers can refer to
-<a href="https://github.com/akheron/optics-ts/tree/main/src/hkt.ts">hkt.ts</a> to see how
-the higher-kinded types / partially applied type operators are actually
-implemented.</p>
-<h2 id="operations">Operations<a class="headerlink" href="#operations" title="Permanent link">#</a></h2>
-<p>These function are not optics themselves, but instead operate on the optics and
-data.</p>
-<h3 id="compose"><code>compose</code><a class="headerlink" href="#compose" title="Permanent link">#</a></h3>
+<p>在下面，我们为了清晰起见，省略了确切的类型签名，而使用了一种手摇式的伪语法。光学描述试图明确光学和函数的操作方式。</p>
+<p>感兴趣的读者可以参考
+<a href="https://github.com/akheron/optics-ts/tree/main/src/hkt.ts">hkt.ts</a> 来看看
+更高级别的类型/部分应用类型运算符实际上是如何实现的。</p>
+<h2 id="operations">操作<a class="headerlink" href="#operations" title="Permanent link">#</a></h2>
+<p>这些函数本身不是光学，而是在光学和数据上操作。</p>
+<h3 id="compose-compose"><code>compose</code> {#<code>compose</code>}<a class="headerlink" href="#compose-compose" title="Permanent link">#</a></h3>
 <p><code>compose :: (optic, ...optics) =&gt; Optic</code></p>
-<p>Compose optics to create a more complex optic. Using a string as an optic is a
-shorthand for <a href="#prop">prop</a>.</p>
-<p>Example:</p>
+<p>组合光学以创建更复杂的光学。使用字符串作为光学是<a href="#prop">prop</a>的简写。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">fooBar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">compose</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">optional</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;bar&#39;</span><span class="p">)</span>
 
 <span class="nx">O</span><span class="p">.</span><span class="nx">preview</span><span class="p">(</span><span class="nx">fooBar</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="kt">undefined</span><span class="w"> </span><span class="p">})</span>
@@ -1420,83 +1450,76 @@ shorthand for <a href="#prop">prop</a>.</p>
 <span class="nx">O</span><span class="p">.</span><span class="nx">preview</span><span class="p">(</span><span class="nx">fooBar</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">bar</span><span class="o">:</span><span class="w"> </span><span class="kt">5</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">})</span>
 <span class="c1">// 5</span>
 </code></pre></div>
-<h3 id="get"><code>get</code><a class="headerlink" href="#get" title="Permanent link">#</a></h3>
+<h3 id="get-get"><code>get</code> {#<code>get</code>}<a class="headerlink" href="#get-get" title="Permanent link">#</a></h3>
 <p><code>get :: (optic, source) =&gt; value</code><br> <code>get :: (optic) =&gt; (source) =&gt; value</code></p>
-<p>Read a value through an <code>Equivalence</code>, <code>Iso</code>, <code>Lens</code> or <code>Getter</code>.</p>
-<p>Example:</p>
+<p>通过 <code>Equivalence</code>、<code>Iso</code>、<code>Lens</code> 或 <code>Getter</code> 读取值。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">pick</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;baz&#39;</span><span class="p">),</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="kt">1</span><span class="p">,</span><span class="w"> </span><span class="nx">bar</span><span class="o">:</span><span class="w"> </span><span class="kt">2</span><span class="p">,</span><span class="w"> </span><span class="nx">baz</span><span class="o">:</span><span class="w"> </span><span class="kt">3</span><span class="w"> </span><span class="p">})</span>
 <span class="c1">// { foo: 1, baz: 3 }</span>
 </code></pre></div>
-<h3 id="preview"><code>preview</code><a class="headerlink" href="#preview" title="Permanent link">#</a></h3>
+<h3 id="preview-preview"><code>preview</code> {#<code>preview</code>}<a class="headerlink" href="#preview-preview" title="Permanent link">#</a></h3>
 <p><code>preview :: (optic, source) =&gt; value | undefined</code><br>
 <code>preview :: (optic) =&gt; (source) =&gt; value | undefined</code></p>
-<p>Read a value through a <code>Prism</code>, <code>Traversal</code>, <code>AffineFold</code> or <code>Fold</code>. For <code>Prism</code>
-and <code>AffineFold</code>, return <code>undefined</code> if the optic doesn't match (has zero
-focuses). For <code>Traversal</code> and <code>Fold</code>, returns the value of the first focus, or
-<code>undefined</code> if there are no focuses.</p>
-<p>Example:</p>
+<p>通过 <code>Prism</code>、<code>Traversal</code>、<code>AffineFold</code> 或 <code>Fold</code> 读取值。对于 <code>Prism</code>
+和 <code>AffineFold</code>，如果光学不匹配（没有焦点），则返回 <code>undefined</code>。对于 <code>Traversal</code> 和 <code>Fold</code>，返回第一个焦点的值，或者如果没有焦点，则返回 <code>undefined</code>。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">preview</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">optional</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">)</span>
 <span class="c1">// 1</span>
 
 <span class="nx">O</span><span class="p">.</span><span class="nx">preview</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">elems</span><span class="p">,</span><span class="w"> </span><span class="p">[])</span>
 <span class="c1">// undefined</span>
 </code></pre></div>
-<h3 id="collect"><code>collect</code><a class="headerlink" href="#collect" title="Permanent link">#</a></h3>
+<h3 id="collect-collect"><code>collect</code> {#<code>collect</code>}<a class="headerlink" href="#collect-collect" title="Permanent link">#</a></h3>
 <p><code>collect :: (optic, source) =&gt; value[]</code><br>
 <code>collect :: (optic) =&gt; (source) =&gt; value[]</code></p>
-<p>Read all focused values through a <code>Prism</code>, <code>Traversal</code>, <code>AffineFold</code> or <code>Fold</code>.
-For <code>Prism</code> and <code>AffineFold</code>, the return value is an array of 0 or 1 elements.
-For <code>Traversal</code> and <code>Fold</code>, the return value is an array of zero or more
-elements.</p>
-<p>Example:</p>
+<p>通过 <code>Prism</code>、<code>Traversal</code>、<code>AffineFold</code> 或 <code>Fold</code> 读取所有焦点值。
+对于 <code>Prism</code> 和 <code>AffineFold</code>，返回值是一个包含 0 或 1 个元素的数组。
+对于 <code>Traversal</code> 和 <code>Fold</code>，返回值是一个包含零个或多个元素的数组。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">collect</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">optional</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">)</span>
 <span class="c1">// [1]</span>
 
 <span class="nx">O</span><span class="p">.</span><span class="nx">collect</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">elems</span><span class="p">,</span><span class="w"> </span><span class="p">[])</span>
 <span class="c1">// []</span>
 </code></pre></div>
-<h3 id="modify"><code>modify</code><a class="headerlink" href="#modify" title="Permanent link">#</a></h3>
+<h3 id="modify-modify"><code>modify</code> {#<code>modify</code>}<a class="headerlink" href="#modify-modify" title="Permanent link">#</a></h3>
 <p><code>modify :: (optic, fn, source) =&gt; value</code><br>
 <code>modify :: (optic) =&gt; (fn, source) =&gt; value</code><br>
 <code>modify :: (optic) =&gt; (fn) =&gt; (source) =&gt; value</code></p>
-<p>Modify the focused value(s) through an <code>Equivalence</code>, <code>Iso</code>, <code>Lens</code>, <code>Prism</code> or
-<code>Traversal</code>. Returns an updated copy of <code>source</code> with all focuses modified by
-mapping them through the function <code>fn</code>.</p>
-<p>Example:</p>
+<p>通过 <code>Equivalence</code>、<code>Iso</code>、<code>Lens</code>、<code>Prism</code> 或
+<code>Traversal</code> 修改焦点值。返回 <code>source</code> 的更新副本，所有焦点都通过映射它们通过函数 <code>fn</code> 进行修改。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">modify</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">prop</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="nx">value</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">value</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;bar&#39;</span><span class="w"> </span><span class="p">})</span>
 <span class="c1">// { foo: 3 }</span>
 </code></pre></div>
-<h3 id="set"><code>set</code><a class="headerlink" href="#set" title="Permanent link">#</a></h3>
-<p>Signatures:</p>
+<h3 id="set-set"><code>set</code> {#<code>set</code>}<a class="headerlink" href="#set-set" title="Permanent link">#</a></h3>
+<p>签名：</p>
 <p><code>set :: (optic, newValue, source) =&gt; value</code><br>
 <code>set :: (optic) =&gt; (newValue, source) =&gt; value</code><br>
 <code>set :: (optic) =&gt; (newValue) =&gt; (source) =&gt; value</code></p>
-<p>Write a constant value through an <code>Equivalence</code>, <code>Iso</code>, <code>Lens</code>, <code>Prism</code> or
-<code>Traversal</code>. Returns an updated copy of <code>source</code> with all focuses replaced by
-<code>newValue</code>.</p>
-<p>Example:</p>
+<p>通过 <code>Equivalence</code>、<code>Iso</code>、<code>Lens</code>、<code>Prism</code> 或
+<code>Traversal</code> 写入常量值。返回 <code>source</code> 的更新副本，所有焦点都被 <code>newValue</code> 替换。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">prop</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">),</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;bar&#39;</span><span class="w"> </span><span class="p">})</span>
 <span class="c1">// { foo: null }</span>
 </code></pre></div>
-<h3 id="remove"><code>remove</code><a class="headerlink" href="#remove" title="Permanent link">#</a></h3>
+<h3 id="remove-remove"><code>remove</code> {#<code>remove</code>}<a class="headerlink" href="#remove-remove" title="Permanent link">#</a></h3>
 <p><code>remove :: (optic, source) =&gt; value</code><br>
 <code>remove :: (optic) =&gt; (source) =&gt; value</code></p>
-<p>Remove the focus of a <code>RemovablePrism</code> from its containing container.</p>
-<p>Example:</p>
+<p>从其包含的容器中删除 <code>RemovablePrism</code> 的焦点。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">at</span><span class="p">(</span><span class="mf">1</span><span class="p">),</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">])</span>
 <span class="c1">// [1, 3]</span>
 </code></pre></div>
-<h2 id="isomorphisms">Isomorphisms<a class="headerlink" href="#isomorphisms" title="Permanent link">#</a></h2>
-<h3 id="iso"><code>iso</code><a class="headerlink" href="#iso" title="Permanent link">#</a></h3>
+<h2 id="isomorphisms">同构<a class="headerlink" href="#isomorphisms" title="Permanent link">#</a></h2>
+<h3 id="iso-iso"><code>iso</code> {#<code>iso</code>}<a class="headerlink" href="#iso-iso" title="Permanent link">#</a></h3>
 <p><code>iso :: (there: (v) =&gt; u, back: (u) =&gt; v) =&gt; Iso</code></p>
-<p>Create an isomorphism from functions <code>there</code> and <code>back</code>. <code>there</code> takes the focus
-and transforms it to another value. <code>back</code> is the inverse of <code>there</code>.</p>
-<p>Note that <code>iso</code> is monomorphic, i.e. you cannot change the value type when
-writing. There's no polymorphic alternative (yet).</p>
-<p>Example:</p>
+<p>从函数 <code>there</code> 和 <code>back</code> 创建一个同构。<code>there</code> 接受焦点并将其转换为另一个值。<code>back</code> 是 <code>there</code> 的逆函数。</p>
+<p>注意，<code>iso</code> 是单态的，即你不能在写入时更改值类型。还没有多态的替代品（尚未）。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">sep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">iso</span><span class="p">(</span>
-<span class="w">  </span><span class="p">(</span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">value</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">),</span>
-<span class="w">  </span><span class="p">(</span><span class="nx">arr</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">[])</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">arr</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="p">(</span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">value</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">),</span>
+<span class="w">    </span><span class="p">(</span><span class="nx">arr</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">[])</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">arr</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
 <span class="p">)</span>
 
 <span class="nx">O</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">sep</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;foo,bar,baz&#39;</span><span class="p">)</span>
@@ -1505,49 +1528,42 @@ writing. There's no polymorphic alternative (yet).</p>
 <span class="nx">O</span><span class="p">.</span><span class="nx">modify</span><span class="p">(</span><span class="nx">sep</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">arr</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">[...</span><span class="nx">arr</span><span class="p">].</span><span class="nx">reverse</span><span class="p">(),</span><span class="w"> </span><span class="s1">&#39;foo,bar,baz&#39;</span><span class="p">)</span>
 <span class="c1">// &#39;baz,bar,foo&#39;</span>
 </code></pre></div>
-<h3 id="indexed"><code>indexed</code><a class="headerlink" href="#indexed" title="Permanent link">#</a></h3>
+<h3 id="indexed-indexed"><code>indexed</code> {#<code>indexed</code>}<a class="headerlink" href="#indexed-indexed" title="Permanent link">#</a></h3>
 <p><code>indexed :: Iso</code></p>
-<p><em>Only works on arrays.</em></p>
-<p><code>indexed</code> is an isomorphism from an array of values to an array of index-value
-pairs, i.e. from <code>[a, b, ...]</code> to <code>[[0, a], [1, b], ...]</code>.</p>
-<p>In the write direction, elements are sorted by index, and only the last one of
-duplicate indices are kept.</p>
-<p>Example:</p>
+<p><em>只适用于数组。</em></p>
+<p><code>indexed</code> 是从值数组到索引-值对数组的同构，即从 <code>[a, b, ...]</code> 到 <code>[[0, a], [1, b], ...]</code>。</p>
+<p>在写入方向，元素按索引排序，只保留重复索引的最后一个。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">indexed</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;c&#39;</span><span class="p">])</span>
-<span class="c1">// [[0, &#39;a&#39;], [1, &#39;b&#39;], [2, &#39;c&#39;]]</span>
+<span class="c1">// [[0, &#39;a&#39;], [1, &#39;b&#39;], [2, &#39;c&#39;]] </span>
 
 <span class="nx">O</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">compose</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">indexed</span><span class="p">,</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">at</span><span class="p">(</span><span class="mf">1</span><span class="p">),</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">nth</span><span class="p">(</span><span class="mf">0</span><span class="p">)),</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;c&#39;</span><span class="p">])</span>
 <span class="c1">// [&#39;a&#39;, &#39;c&#39;, &#39;b&#39;]</span>
 </code></pre></div>
-<h2 id="lenses">Lenses<a class="headerlink" href="#lenses" title="Permanent link">#</a></h2>
-<h3 id="prop"><code>prop</code><a class="headerlink" href="#prop" title="Permanent link">#</a></h3>
+<h2 id="lenses">透镜<a class="headerlink" href="#lenses" title="Permanent link">#</a></h2>
+<h3 id="prop-prop"><code>prop</code> {#<code>prop</code>}<a class="headerlink" href="#prop-prop" title="Permanent link">#</a></h3>
 <p><code>prop :: (key) =&gt; Lens</code></p>
-<p>Create a lens that focuses on the object property <code>key</code>.</p>
-<p>You can also just simply pass a string to <a href="#compose"><code>compose</code></a> instead of using
-<code>prop</code>.</p>
-<p>Example:</p>
+<p>创建一个聚焦于对象属性 <code>key</code> 的透镜。</p>
+<p>你也可以简单地将字符串传递给 <a href="#compose"><code>compose</code></a>，而不是使用 <code>prop</code>。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">prop</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">),</span><span class="w"> </span><span class="mf">42</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="kt">null</span><span class="w"> </span><span class="p">})</span>
 <span class="c1">// { foo: 42 }</span>
 </code></pre></div>
-<p>See <a href="#atKey"><code>atKey</code></a> for a similar prism that works on records.</p>
-<h3 id="nth"><code>nth</code><a class="headerlink" href="#nth" title="Permanent link">#</a></h3>
+<p>请参阅 <a href="#atKey"><code>atKey</code></a> 了解在记录上工作的类似棱镜。</p>
+<h3 id="nth-nth"><code>nth</code> {#<code>nth</code>}<a class="headerlink" href="#nth-nth" title="Permanent link">#</a></h3>
 <p><code>nth :: (n) =&gt; Lens</code></p>
-<p><em>Only works on
-<a href="https://www.typescriptlang.org/docs/handbook/2/objects.html#tuple-types">tuples</a>
-whose length is a least <code>n + 1</code>.</em></p>
-<p>Create a lens that focuses on the index <code>n</code> of a tuple. This is a lens because
-the length of the focus is checked on type level, so index <code>n</code> is always
-defined.</p>
-<p>See <a href="#at"><code>at</code></a> for a similar prism that works on arrays.</p>
-<h3 id="pick"><code>pick</code><a class="headerlink" href="#pick" title="Permanent link">#</a></h3>
+<p><em>只适用于长度至少为 <code>n + 1</code> 的
+<a href="https://www.typescriptlang.org/docs/handbook/2/objects.html#tuple-types">元组</a>。</em></p>
+<p>创建一个聚焦于元组索引 <code>n</code> 的透镜。这是一个透镜，因为焦点的长度在类型级别上进行检查，所以索引 <code>n</code> 总是已定义的。</p>
+<p>请参阅 <a href="#at"><code>at</code></a> 了解在数组上工作的类似棱镜。</p>
+<h3 id="pick-pick"><code>pick</code> {#<code>pick</code>}<a class="headerlink" href="#pick-pick" title="Permanent link">#</a></h3>
 <p><code>pick :: (...keys) =&gt; Lens</code></p>
-<p>Create a lens that picks the given properties from an object. When writing
-through the lens, you can add or remove properties.</p>
-<p>Example:</p>
+<p>创建一个从对象中选择给定属性的透镜。通过透镜写入时，你可以添加或删除属性。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;something&#39;</span><span class="p">,</span>
-<span class="w">  </span><span class="nx">bar</span><span class="o">:</span><span class="w"> </span><span class="kt">42</span><span class="p">,</span>
-<span class="w">  </span><span class="nx">baz</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;something&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">bar</span><span class="o">:</span><span class="w"> </span><span class="kt">42</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">baz</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="p">,</span>
 <span class="p">}</span>
 
 <span class="nx">O</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">pick</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;bar&#39;</span><span class="p">),</span><span class="w"> </span><span class="nx">data</span><span class="p">)</span>
@@ -1570,14 +1586,12 @@ through the lens, you can add or remove properties.</p>
 <span class="c1">//   quux: &#39;added&#39;,</span>
 <span class="c1">// }</span>
 </code></pre></div>
-<h3 id="filter"><code>filter</code><a class="headerlink" href="#filter" title="Permanent link">#</a></h3>
+<h3 id="filter-filter"><code>filter</code> {#<code>filter</code>}<a class="headerlink" href="#filter-filter" title="Permanent link">#</a></h3>
 <p><code>filter :: (fn: (elem) =&gt; boolean) =&gt; Lens</code></p>
-<p><em>Only works on arrays.</em></p>
-<p>Create a lens that focuses on the array elements matched by <code>fn</code>. If <code>fn</code> is a
-type guard of type <code>T</code>, narrow the type of the focus to <code>T[]</code>.</p>
-<p>Writing a longer/shorter array adds/removes elements. Extraneous elements are
-added to the end of the array.</p>
-<p>Example:</p>
+<p><em>只适用于数组。</em></p>
+<p>创建一个聚焦于由 <code>fn</code> 匹配的数组元素的透镜。如果 <code>fn</code> 是类型 <code>T</code> 的类型保护，则将焦点的类型缩小为 <code>T[]</code>。</p>
+<p>写入更长/更短的数组会添加/删除元素。额外的元素被添加到数组的末尾。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">l</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">filter</span><span class="p">((</span><span class="nx">x</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="mf">1</span><span class="p">)</span>
 
 <span class="nx">O</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">l</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;c&#39;</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">6</span><span class="p">])</span>
@@ -1589,12 +1603,10 @@ added to the end of the array.</p>
 <span class="nx">O</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">l</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;e&#39;</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="mf">6</span><span class="p">])</span>
 <span class="c1">// [&#39;a&#39;, 2, &#39;b&#39;, &#39;c&#39;, 6, &#39;d&#39;, &#39;e&#39;]</span>
 </code></pre></div>
-<h3 id="valueor"><code>valueOr</code><a class="headerlink" href="#valueor" title="Permanent link">#</a></h3>
+<h3 id="valueor-valueor"><code>valueOr</code> {#<code>valueor</code>}<a class="headerlink" href="#valueor-valueor" title="Permanent link">#</a></h3>
 <p><code>valueOr :: (defaultValue) =&gt; Lens</code></p>
-<p>Create a lens that, when read through, returns <code>defaultValue</code> when the focused
-value is <code>undefined</code>. If the focus is not <code>undefined</code>, the focus is returned
-unchanged.</p>
-<p>Example:</p>
+<p>创建一个透镜，当通过它读取时，如果焦点值为 <code>undefined</code>，则返回 <code>defaultValue</code>。如果焦点不是 <code>undefined</code>，则返回未更改的焦点。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">valueOr</span><span class="p">(</span><span class="mf">0</span><span class="p">),</span><span class="w"> </span><span class="kc">undefined</span><span class="p">)</span>
 <span class="c1">// 0</span>
 
@@ -1604,37 +1616,27 @@ unchanged.</p>
 <span class="nx">O</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">compose</span><span class="p">(</span><span class="s1">&#39;maxAge&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">valueOr</span><span class="p">(</span><span class="mf">100</span><span class="p">)),</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">maxAge</span><span class="o">:</span><span class="w"> </span><span class="kt">undefined</span><span class="w"> </span><span class="p">})</span>
 <span class="c1">// 100</span>
 </code></pre></div>
-<h3 id="partsof"><code>partsOf</code><a class="headerlink" href="#partsof" title="Permanent link">#</a></h3>
+<h3 id="partsof-partsof"><code>partsOf</code> {#<code>partsof</code>}<a class="headerlink" href="#partsof-partsof" title="Permanent link">#</a></h3>
 <p><code>partsOf :: (traversal) =&gt; Lens</code></p>
-<p>Given a traversal, create a lens that focuses on an array of the focuses of the
-traversal. When read through, the result is an array of elements as if produced
-by <a href="#collect"><code>collect</code></a>. When written through, the focuses of the traversal are
-replaced with the values from the written array. For a polymorphic write, the
-focuses of the tarversal get the type of the written array elements. If a
-shorter or longer array is written, <strong>throws an error</strong>. This is to ensure that
-all focuses are replaced and the types are correct.</p>
-<p>Example:</p>
+<p>给定一个遍历，创建一个聚焦于遍历焦点的数组的透镜。当通过读取时，结果是一个元素数组，就像由 <a href="#collect"><code>collect</code></a> 生成的那样。当通过写入时，遍历的焦点被替换为来自写入数组的值。对于多态写入，遍历的焦点获取写入数组元素的类型。如果写入了更短或更长的数组，<strong>会抛出错误</strong>。这是为了确保所有焦点都被替换，类型是正确的。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span>
-<span class="w">  </span><span class="nx">O</span><span class="p">.</span><span class="nx">partsOf</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">compose</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">elems</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;foo&#39;</span><span class="p">)),</span>
-<span class="w">  </span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;z&#39;</span><span class="p">],</span>
-<span class="w">  </span><span class="p">[{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;a&#39;</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;b&#39;</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;c&#39;</span><span class="w"> </span><span class="p">}]</span>
+<span class="w">    </span><span class="nx">O</span><span class="p">.</span><span class="nx">partsOf</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">compose</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">elems</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;foo&#39;</span><span class="p">)),</span>
+<span class="w">    </span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;y&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;z&#39;</span><span class="p">],</span>
+<span class="w">    </span><span class="p">[{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;a&#39;</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;b&#39;</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;c&#39;</span><span class="w"> </span><span class="p">}]</span>
 <span class="p">)</span>
 <span class="c1">// [{ foo: &#39;x&#39; }, { foo: &#39;y&#39; }, { foo: &#39;z&#39; }]</span>
 
 <span class="nx">O</span><span class="p">.</span><span class="nx">modify</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">partsOf</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">words</span><span class="p">),</span><span class="w"> </span><span class="p">(</span><span class="nx">words</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">[...</span><span class="nx">words</span><span class="p">].</span><span class="nx">reverse</span><span class="p">(),</span><span class="w"> </span><span class="s1">&#39;this is a test&#39;</span><span class="p">)</span>
 <span class="c1">// &#39;test a is this&#39;</span>
 </code></pre></div>
-<p>Note that composing <code>partsOf</code> with setters, like <code>appendTo</code> or <code>prependTo</code>, or
-removing elements through <code>partsOf</code> will not work, because the extra element
-added by the setter or the removed element will cause <code>partsOf</code> to throw.</p>
-<h3 id="reread-rewrite"><code>reread</code>, <code>rewrite</code><a class="headerlink" href="#reread-rewrite" title="Permanent link">#</a></h3>
+<p>注意，将 <code>partsOf</code> 与设置器（如 <code>appendTo</code> 或 <code>prependTo</code>）组合，或通过 <code>partsOf</code> 删除元素将不起作用，因为设置器添加的额外元素或删除的元素将导致 <code>partsOf</code> 抛出错误。</p>
+<h3 id="reread-rewrite-reread-rewrite"><code>reread</code>, <code>rewrite</code> {#<code>reread</code>,-<code>rewrite</code>}<a class="headerlink" href="#reread-rewrite-reread-rewrite" title="Permanent link">#</a></h3>
 <p><code>reread :: (fn: (value) =&gt; value) =&gt; Lens</code><br>
 <code>rewrite :: (fn: (value) =&gt; value) =&gt; Lens</code></p>
-<p>Create a lens that can modify the value in the read direction (<code>reread</code>) or
-write direction (<code>rewrite</code>). This is useful to e.g. ensure data structure
-invariants in some cases.</p>
-<p>Both <code>reread</code> and <code>rewrite</code> are monomorphic.</p>
-<p>Example:</p>
+<p>创建一个可以在读方向（<code>reread</code>）或写方向（<code>rewrite</code>）修改值的镜头。这在某些情况下确保数据结构不变性很有用。</p>
+<p><code>reread</code> 和 <code>rewrite</code> 都是单态的。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">read</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">reread</span><span class="p">((</span><span class="nx">x</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">x</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">())</span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">write</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">rewrite</span><span class="p">((</span><span class="nx">x</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">x</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">())</span>
 
@@ -1650,17 +1652,14 @@ invariants in some cases.</p>
 <span class="nx">O</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">write</span><span class="p">,</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;foo&#39;</span><span class="p">)</span>
 <span class="c1">// FOO</span>
 </code></pre></div>
-<h3 id="lens"><code>lens</code><a class="headerlink" href="#lens" title="Permanent link">#</a></h3>
+<h3 id="lens-lens"><code>lens</code> {#<code>lens</code>}<a class="headerlink" href="#lens-lens" title="Permanent link">#</a></h3>
 <p><code>lens :: (view: (v) =&gt; u, update: (v, u) =&gt; v) =&gt; Lens</code></p>
-<p>Create a lens from functions <code>view</code> and <code>update</code>. <code>view</code> takes the current focus
-and returns a new focus. <code>update</code> takes the orginal focus and a value, and
-updates the original focus with that value.</p>
-<p>Note that <code>lens</code> is monomorphic, i.e. you cannot change the value type when
-writing. There's no polymorphic alternative (yet).</p>
-<p>Example:</p>
+<p>从 <code>view</code> 和 <code>update</code> 函数创建一个镜头。<code>view</code> 接受当前焦点并返回一个新焦点。<code>update</code> 接受原始焦点和一个值，并用该值更新原始焦点。</p>
+<p>注意，<code>lens</code> 是单态的，即你不能在写入时更改值类型。还没有多态的替代品（暂时）。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">lens</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">lens</span><span class="o">&lt;</span><span class="kt">number</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="kt">string</span><span class="p">,</span><span class="w"> </span><span class="kt">number</span><span class="o">&gt;</span><span class="p">(</span>
-<span class="w">  </span><span class="p">(</span><span class="nx">v</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">v</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;string&#39;</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">0</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">v</span><span class="p">),</span>
-<span class="w">  </span><span class="p">(</span><span class="nx">_</span><span class="p">,</span><span class="w"> </span><span class="nx">u</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">u</span>
+<span class="w">    </span><span class="p">(</span><span class="nx">v</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">v</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;string&#39;</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">0</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">v</span><span class="p">),</span>
+<span class="w">    </span><span class="p">(</span><span class="nx">_</span><span class="p">,</span><span class="w"> </span><span class="nx">u</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">u</span>
 <span class="p">)</span>
 
 <span class="nx">O</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">lens</span><span class="p">,</span><span class="w"> </span><span class="mf">100</span><span class="p">)</span>
@@ -1670,11 +1669,10 @@ writing. There's no polymorphic alternative (yet).</p>
 <span class="c1">// 0</span>
 </code></pre></div>
 <h2 id="prisms">Prisms<a class="headerlink" href="#prisms" title="Permanent link">#</a></h2>
-<h3 id="optional"><code>optional</code><a class="headerlink" href="#optional" title="Permanent link">#</a></h3>
+<h3 id="optional-optional"><code>optional</code> {#<code>optional</code>}<a class="headerlink" href="#optional-optional" title="Permanent link">#</a></h3>
 <p><code>optional :: Prism</code></p>
-<p>A prism that matches if the value is not <code>undefined</code>. Narrows the type to remove
-<code>undefined</code>, e.g. <code>number | undefined</code> narrows to <code>number</code>.</p>
-<p>Example:</p>
+<p>如果值不是 <code>undefined</code>，则匹配的棱镜。将类型缩小以删除 <code>undefined</code>，例如 <code>number | undefined</code> 缩小为 <code>number</code>。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">prism</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">compose</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">optional</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;bar&#39;</span><span class="p">)</span>
 
 <span class="nx">O</span><span class="p">.</span><span class="nx">preview</span><span class="p">(</span><span class="nx">prism</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">bar</span><span class="o">:</span><span class="w"> </span><span class="kt">42</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">})</span>
@@ -1683,21 +1681,19 @@ writing. There's no polymorphic alternative (yet).</p>
 <span class="nx">O</span><span class="p">.</span><span class="nx">preview</span><span class="p">(</span><span class="nx">prism</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="kt">undefined</span><span class="w"> </span><span class="p">})</span>
 <span class="c1">// undefined</span>
 </code></pre></div>
-<h3 id="guard"><code>guard</code><a class="headerlink" href="#guard" title="Permanent link">#</a></h3>
-<p><code>guard :: (fn: (value) =&gt; boolean) =&gt; Prism</code> (monomorphic)<br>
-<code>guard :: &lt;F&gt;() =&gt; (fn: (value) =&gt; boolean) =&gt; Prism</code> (polymorphic)</p>
-<p>Create a prism that matches if the value matches the type guard <code>fn</code>.</p>
-<p>The first, simpler signature returns a monomorphic prism, which can only be used
-for writes that don't change the type of the focus.</p>
-<p>The second signature returns a polymorphic prism that uses the type transform
-<code>F</code> to construct the result type.</p>
-<p>Monomorphic example:</p>
+<h3 id="guard-guard"><code>guard</code> {#<code>guard</code>}<a class="headerlink" href="#guard-guard" title="Permanent link">#</a></h3>
+<p><code>guard :: (fn: (value) =&gt; boolean) =&gt; Prism</code> (单态)<br>
+<code>guard :: &lt;F&gt;() =&gt; (fn: (value) =&gt; boolean) =&gt; Prism</code> (多态)</p>
+<p>创建一个棱镜，如果值匹配类型保护 <code>fn</code>，则匹配。</p>
+<p>第一个，更简单的签名返回一个单态棱镜，只能用于不改变焦点类型的写入。</p>
+<p>第二个签名返回一个使用类型转换 <code>F</code> 构造结果类型的多态棱镜。</p>
+<p>单态示例：</p>
 <div class="highlight"><pre><span></span><code><span class="kr">type</span><span class="w"> </span><span class="nx">Circle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;circle&#39;</span><span class="p">;</span><span class="w"> </span><span class="nx">radius</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span>
 <span class="kr">type</span><span class="w"> </span><span class="nx">Square</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;square&#39;</span><span class="p">;</span><span class="w"> </span><span class="nx">size</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="w"> </span><span class="p">}</span>
 <span class="kr">type</span><span class="w"> </span><span class="nx">Shape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Circle</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">Square</span>
 
 <span class="kd">function</span><span class="w"> </span><span class="nx">isCircle</span><span class="p">(</span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="kt">Shape</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">value</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">Circle</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">value</span><span class="p">.</span><span class="kr">type</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;circle&#39;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">value</span><span class="p">.</span><span class="kr">type</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;circle&#39;</span>
 <span class="p">}</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">circle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;circle&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">radius</span><span class="o">:</span><span class="w"> </span><span class="kt">42</span><span class="w"> </span><span class="p">}</span>
@@ -1717,24 +1713,23 @@ for writes that don't change the type of the focus.</p>
 <span class="nx">O</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">circleRadius</span><span class="p">,</span><span class="w"> </span><span class="mf">99</span><span class="p">,</span><span class="w"> </span><span class="nx">circle</span><span class="p">)</span>
 <span class="c1">// { type: &#39;circle&#39;, radius: 99 }</span>
 </code></pre></div>
-<p>Polymorphic example:</p>
+<p>多态示例：</p>
 <div class="highlight"><pre><span></span><code><span class="kr">type</span><span class="w"> </span><span class="nx">Some</span><span class="o">&lt;</span><span class="nx">T</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;some&#39;</span><span class="p">;</span><span class="w"> </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="kt">T</span><span class="w"> </span><span class="p">}</span>
 <span class="kr">type</span><span class="w"> </span><span class="nx">None</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="kr">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;none&#39;</span><span class="w"> </span><span class="p">}</span>
 <span class="kr">type</span><span class="w"> </span><span class="nx">Option</span><span class="o">&lt;</span><span class="nx">T</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Some</span><span class="o">&lt;</span><span class="nx">T</span><span class="o">&gt;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">None</span>
 
-<span class="c1">// O.HKT is a &quot;type transform&quot; or a &quot;higher-kinded type&quot;. this[1] is the input</span>
-<span class="c1">// type, and the output is taken from prop 0.</span>
+<span class="c1">// O.HKT 是一个 &quot;类型转换&quot; 或 &quot;高阶类型&quot;。this[1] 是输入</span>
+<span class="c1">// 类型，输出从 prop 0 取得。</span>
 <span class="c1">//</span>
-<span class="c1">// The SomeF type transform just checks that the input type in this[1] has the</span>
-<span class="c1">// shape of a Some, and passes it through as-is. In other words, the writer</span>
-<span class="c1">// can change the type of the &#39;value&#39; prop, but nothing else.</span>
+<span class="c1">// SomeF 类型转换只检查 this[1] 中的输入类型是否具有</span>
+<span class="c1">// Some 的形状，并原样通过。换句话说，写入者可以更改 &#39;value&#39; prop 的类型，但不能更改其他任何东西。</span>
 <span class="c1">//</span>
 <span class="kd">interface</span><span class="w"> </span><span class="nx">SomeF</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">HKT</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="nx">0</span><span class="o">:</span><span class="w"> </span><span class="kt">this</span><span class="p">[</span><span class="mf">1</span><span class="p">]</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">Some</span><span class="o">&lt;</span><span class="nx">any</span><span class="o">&gt;</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="k">this</span><span class="p">[</span><span class="mf">1</span><span class="p">]</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nx">never</span>
+<span class="w">    </span><span class="nx">0</span><span class="o">:</span><span class="w"> </span><span class="kt">this</span><span class="p">[</span><span class="mf">1</span><span class="p">]</span><span class="w"> </span><span class="k">extends</span><span class="w"> </span><span class="nx">Some</span><span class="o">&lt;</span><span class="nx">any</span><span class="o">&gt;</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="k">this</span><span class="p">[</span><span class="mf">1</span><span class="p">]</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nx">never</span>
 <span class="p">}</span>
 
 <span class="kd">function</span><span class="w"> </span><span class="nx">isSomeNumber</span><span class="p">(</span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="kt">Option</span><span class="o">&lt;</span><span class="kt">number</span><span class="o">&gt;</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="nx">value</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">Some</span><span class="o">&lt;</span><span class="kt">number</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nx">value</span><span class="p">.</span><span class="kr">type</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;some&#39;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">value</span><span class="p">.</span><span class="kr">type</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;some&#39;</span>
 <span class="p">}</span>
 
 <span class="kd">const</span><span class="w"> </span><span class="nx">someValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">compose</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">guard</span><span class="o">&lt;</span><span class="nx">SomeF</span><span class="o">&gt;</span><span class="p">()(</span><span class="nx">isSomeNumber</span><span class="p">),</span><span class="w"> </span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
@@ -1754,14 +1749,12 @@ for writes that don't change the type of the focus.</p>
 <span class="kd">const</span><span class="w"> </span><span class="nx">result2</span><span class="o">:</span><span class="w"> </span><span class="kt">Option</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">someValue</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;foo&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">some</span><span class="p">)</span>
 <span class="c1">// { type: &#39;some&#39;, value: &#39;foo&#39; }</span>
 </code></pre></div>
-<h3 id="at"><code>at</code><a class="headerlink" href="#at" title="Permanent link">#</a></h3>
+<h3 id="at-at"><code>at</code> {#<code>at</code>}<a class="headerlink" href="#at-at" title="Permanent link">#</a></h3>
 <p><code>at :: (i) =&gt; RemovablePrism</code></p>
-<p><em>Only works on arrays and strings. Removable.</em></p>
-<p>Create a prism that focuses on the n'th element of an array or the n'th
-character (substring of length 1) of a string.</p>
-<p>When used on a string, only strings can be written. Writing strings of a
-different length is supported.</p>
-<p>Example:</p>
+<p><em>只适用于数组和字符串。可移除。</em></p>
+<p>创建一个棱镜，专注于数组的第 n 个元素或字符串的第 n 个字符（长度为 1 的子字符串）。</p>
+<p>在字符串上使用时，只能写入字符串。支持写入不同长度的字符串。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">preview</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">at</span><span class="p">(</span><span class="mf">1</span><span class="p">),</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;c&#39;</span><span class="p">])</span>
 <span class="c1">// &#39;b&#39;</span>
 
@@ -1798,14 +1791,14 @@ different length is supported.</p>
 <span class="nx">O</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">at</span><span class="p">(</span><span class="mf">1</span><span class="p">),</span><span class="w"> </span><span class="s1">&#39;abc&#39;</span><span class="p">)</span>
 <span class="c1">// &#39;ac&#39;</span>
 </code></pre></div>
-<h3 id="head"><code>head</code><a class="headerlink" href="#head" title="Permanent link">#</a></h3>
+<h3 id="head-head"><code>head</code> {#<code>head</code>}<a class="headerlink" href="#head-head" title="Permanent link">#</a></h3>
 <p><code>head :: Prism</code></p>
-<p>A shorthand for <code>at(0)</code>.</p>
-<h3 id="atkey"><code>atKey</code><a class="headerlink" href="#atkey" title="Permanent link">#</a></h3>
+<p><code>at(0)</code>的简写。</p>
+<h3 id="atkey-atkey"><code>atKey</code> {#<code>atkey</code>}<a class="headerlink" href="#atkey-atkey" title="Permanent link">#</a></h3>
 <p><code>atKey :: (key) =&gt; RemovablePrism</code></p>
-<p><em>Only works on records (<code>Record&lt;string, T&gt;</code>). Removable.</em></p>
-<p>Create a prism that focuses on the key of a record.</p>
-<p>Example:</p>
+<p><em>仅适用于记录（<code>Record&lt;string, T&gt;</code>）。可移除。</em></p>
+<p>创建一个聚焦于记录键的棱镜。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">preview</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">atKey</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">),</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;bar&#39;</span><span class="w"> </span><span class="p">})</span>
 <span class="c1">// &#39;bar&#39;</span>
 
@@ -1821,12 +1814,11 @@ different length is supported.</p>
 <span class="nx">O</span><span class="p">.</span><span class="nx">remove</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">atKey</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">),</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;bar&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">hello</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;world&#39;</span><span class="w"> </span><span class="p">})</span>
 <span class="c1">// { hello: &#39;world&#39; }</span>
 </code></pre></div>
-<h3 id="find"><code>find</code><a class="headerlink" href="#find" title="Permanent link">#</a></h3>
+<h3 id="find-find"><code>find</code> {#<code>find</code>}<a class="headerlink" href="#find-find" title="Permanent link">#</a></h3>
 <p><code>find :: (fn: (elem) =&gt; boolean) =&gt; RemovablePrism</code></p>
-<p><em>Only works on arrays. Removable.</em></p>
-<p>Create a prism that focuses on the first element of an array which matches the
-predicate <code>fn</code>.</p>
-<p>Example:</p>
+<p><em>仅适用于数组。可移除。</em></p>
+<p>创建一个棱镜，聚焦于数组中第一个匹配谓词 <code>fn</code> 的元素。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">negativeElem</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">find</span><span class="p">((</span><span class="nx">x</span><span class="o">:</span><span class="w"> </span><span class="kt">number</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span>
 
 <span class="nx">O</span><span class="p">.</span><span class="nx">preview</span><span class="p">(</span><span class="nx">negativeElem</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="o">-</span><span class="mf">2</span><span class="p">])</span>
@@ -1838,14 +1830,13 @@ predicate <code>fn</code>.</p>
 <span class="nx">O</span><span class="p">.</span><span class="nx">preview</span><span class="p">(</span><span class="nx">negativeElem</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">])</span>
 <span class="c1">// undefined</span>
 </code></pre></div>
-<h3 id="when"><code>when</code><a class="headerlink" href="#when" title="Permanent link">#</a></h3>
+<h3 id="when-when"><code>when</code> {#<code>when</code>}<a class="headerlink" href="#when-when" title="Permanent link">#</a></h3>
 <p><code>when :: (fn: (value) =&gt; boolean) =&gt; Prism</code></p>
-<p>Create a prism that matches it the focus matches the predicate <code>fn</code>. Especially
-useful for filtering the focuses of a travesal.</p>
-<p>Example:</p>
+<p>创建一个棱镜，当焦点匹配谓词 <code>fn</code> 时，它会匹配。特别适用于过滤遍历的焦点。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">longWords</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">O</span><span class="p">.</span><span class="nx">compose</span><span class="p">(</span>
-<span class="w">  </span><span class="nx">O</span><span class="p">.</span><span class="nx">words</span><span class="p">,</span>
-<span class="w">  </span><span class="nx">O</span><span class="p">.</span><span class="nx">when</span><span class="p">((</span><span class="nx">s</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">s</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">5</span><span class="p">)</span>
+<span class="w">    </span><span class="nx">O</span><span class="p">.</span><span class="nx">words</span><span class="p">,</span>
+<span class="w">    </span><span class="nx">O</span><span class="p">.</span><span class="nx">when</span><span class="p">((</span><span class="nx">s</span><span class="o">:</span><span class="w"> </span><span class="kt">string</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">s</span><span class="p">.</span><span class="nx">length</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mf">5</span><span class="p">)</span>
 <span class="p">)</span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Some shorter and some longer words&#39;</span>
 
@@ -1856,29 +1847,26 @@ useful for filtering the focuses of a travesal.</p>
 <span class="c1">// &quot;Some SHORTER and some LONGER WORDS&quot;</span>
 </code></pre></div>
 <h2 id="traversals">Traversals<a class="headerlink" href="#traversals" title="Permanent link">#</a></h2>
-<h3 id="elems"><code>elems</code><a class="headerlink" href="#elems" title="Permanent link">#</a></h3>
+<h3 id="elems-elems"><code>elems</code> {#<code>elems</code>}<a class="headerlink" href="#elems-elems" title="Permanent link">#</a></h3>
 <p><code>elems :: Traversal</code></p>
-<p><em>Only works on arrays.</em></p>
-<p>A traversal that focuses on all elements of an array.</p>
+<p><em>仅适用于数组。</em></p>
+<p>一个遍历，聚焦于数组的所有元素。</p>
 <div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">collect</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">compose</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">elems</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;foo&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;bar&#39;</span><span class="p">),</span><span class="w"> </span><span class="p">[</span>
-<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">bar</span><span class="o">:</span><span class="w"> </span><span class="kt">1</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">bar</span><span class="o">:</span><span class="w"> </span><span class="kt">2</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">bar</span><span class="o">:</span><span class="w"> </span><span class="kt">1</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">bar</span><span class="o">:</span><span class="w"> </span><span class="kt">2</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
 <span class="p">])</span>
 <span class="c1">// [1, 2]</span>
 </code></pre></div>
 <h2 id="getters">Getters<a class="headerlink" href="#getters" title="Permanent link">#</a></h2>
-<p>Getters are read-only optics with a single focus. You can think of them like
-one-way isomorphisms or read-only lenses.</p>
-<h3 id="to"><code>to</code><a class="headerlink" href="#to" title="Permanent link">#</a></h3>
+<p>Getters 是具有单一焦点的只读光学元素。你可以将它们视为单向同构或只读镜头。</p>
+<h3 id="to-to"><code>to</code> {#<code>to</code>}<a class="headerlink" href="#to-to" title="Permanent link">#</a></h3>
 <p><code>to :: (fn: (v) =&gt; u) =&gt; Getter</code></p>
-<p>Create a getter that applies the function <code>fn</code> to its focus.</p>
+<p>创建一个 getter，将函数 <code>fn</code> 应用于其焦点。</p>
 <h2 id="setters">Setters<a class="headerlink" href="#setters" title="Permanent link">#</a></h2>
-<h3 id="prependto-appendto"><code>prependTo</code>, <code>appendTo</code><a class="headerlink" href="#prependto-appendto" title="Permanent link">#</a></h3>
+<h3 id="prependto-appendto-prependto-appendto"><code>prependTo</code>, <code>appendTo</code> {#<code>prependto</code>,-<code>appendto</code>}<a class="headerlink" href="#prependto-appendto-prependto-appendto" title="Permanent link">#</a></h3>
 <p><code>prependTo :: Setter</code><br> <code>appendTo :: Setter</code></p>
-<p><em>Only work on arrays.</em></p>
-<p><code>prependTo</code> focuses on the part <em>before the first element</em> and <code>appendTo</code>
-focuses on the part <em>after the last element</em> of an array. When written through,
-prepends or appends the value to the array.</p>
+<p><em>仅适用于数组。</em></p>
+<p><code>prependTo</code> 聚焦于数组的第一个元素之前的部分，<code>appendTo</code> 聚焦于数组的最后一个元素之后的部分。当通过写入时，将值前置或追加到数组。</p>
 <div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">appendTo</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span><span class="w"> </span><span class="mf">2</span><span class="p">])</span>
 <span class="c1">// [0, 1, 2, 3]</span>
 
@@ -1886,25 +1874,22 @@ prepends or appends the value to the array.</p>
 <span class="c1">// [3, 0, 1, 2]</span>
 </code></pre></div>
 <h2 id="string-traversals">String traversals<a class="headerlink" href="#string-traversals" title="Permanent link">#</a></h2>
-<h3 id="chars"><code>chars</code><a class="headerlink" href="#chars" title="Permanent link">#</a></h3>
+<h3 id="chars-chars"><code>chars</code> {#<code>chars</code>}<a class="headerlink" href="#chars-chars" title="Permanent link">#</a></h3>
 <p><code>chars :: Traversal</code></p>
-<p><em>Only works on strings.</em></p>
-<p>A traversal that focuses on all the characters of a string.</p>
-<p>When written through, characters can be removed by writing the empty string, or
-changed to longer strings.</p>
+<p><em>仅适用于字符串。</em></p>
+<p>一个遍历，聚焦于字符串的所有字符。</p>
+<p>当通过写入时，可以通过写入空字符串来删除字符，或者更改为更长的字符串。</p>
 <div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">collect</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">chars</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;foo&#39;</span><span class="p">)</span>
 <span class="c1">// [&#39;f&#39;, &#39;o&#39;, &#39;o&#39;]</span>
 
 <span class="nx">O</span><span class="p">.</span><span class="nx">modify</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">chars</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="nx">c</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">(</span><span class="nx">c</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;o&#39;</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">()),</span><span class="w"> </span><span class="s1">&#39;foobar&#39;</span><span class="p">)</span>
 <span class="c1">// &#39;FBAR&#39;</span>
 </code></pre></div>
-<h3 id="words"><code>words</code><a class="headerlink" href="#words" title="Permanent link">#</a></h3>
+<h3 id="words-words"><code>words</code> {#<code>words</code>}<a class="headerlink" href="#words-words" title="Permanent link">#</a></h3>
 <p><code>words :: Traversal</code></p>
-<p><em>Only works on strings.</em></p>
-<p>A traversal that focuses on all the words of a string. Words are substrings that
-are separated by whitespace.</p>
-<p>When written through, words can be removed by writing the empty string, or
-changed to longer or shorter strings.</p>
+<p><em>仅适用于字符串。</em></p>
+<p>一个遍历，聚焦于字符串的所有单词。单词是由空格分隔的子字符串。</p>
+<p>当通过写入时，可以通过写入空字符串来删除单词，或者更改为更长或更短的字符串。</p>
 <div class="highlight"><pre><span></span><code><span class="nx">O</span><span class="p">.</span><span class="nx">collect</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">words</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;foo, bar&#39;</span><span class="p">)</span>
 <span class="c1">// [&#39;foo,&#39;, &#39;bar&#39;]</span>
 
@@ -1912,14 +1897,13 @@ changed to longer or shorter strings.</p>
 <span class="c1">// &#39;,oof rab&#39;</span>
 </code></pre></div>
 <h2 id="miscellaneous">Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permanent link">#</a></h2>
-<h3 id="eq"><code>eq</code><a class="headerlink" href="#eq" title="Permanent link">#</a></h3>
+<h3 id="eq-eq"><code>eq</code> {#<code>eq</code>}<a class="headerlink" href="#eq-eq" title="Permanent link">#</a></h3>
 <p><code>eq :: Equivalence</code></p>
-<p>Equivalence is a no-op that does nothing. Acts as an identity wrt. composition.</p>
-<h3 id="pipe"><code>pipe</code><a class="headerlink" href="#pipe" title="Permanent link">#</a></h3>
+<p>Equivalence 是一个不做任何事情的空操作。在组合中充当身份。</p>
+<h3 id="pipe-pipe"><code>pipe</code> {#<code>pipe</code>}<a class="headerlink" href="#pipe-pipe" title="Permanent link">#</a></h3>
 <p><code>pipe :: (a, f1, f2, ...) =&gt; v</code></p>
-<p>Pipe the value of an expression (<code>a</code>) into a pipeline of at most 9 unary
-functions (<code>f1</code>, <code>f2</code>, ...).</p>
-<p>Example:</p>
+<p>将表达式的值（<code>a</code>）传入最多 9 个一元函数（<code>f1</code>，<code>f2</code>，...）的管道。</p>
+<p>示例：</p>
 <div class="highlight"><pre><span></span><code><span class="nx">pipe</span><span class="p">(</span>
 <span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nx">foo</span><span class="o">:</span><span class="w"> </span><span class="kt">1</span><span class="p">,</span><span class="w"> </span><span class="nx">bar</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">baz</span><span class="o">:</span><span class="w"> </span><span class="kt">2</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">},</span>
 <span class="w">  </span><span class="nx">O</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="nx">O</span><span class="p">.</span><span class="nx">prop</span><span class="p">(</span><span class="s1">&#39;foo&#39;</span><span class="p">),</span><span class="w"> </span><span class="mf">3</span><span class="p">),</span>
@@ -1973,7 +1957,7 @@ functions (<code>f1</code>, <code>f2</code>, ...).</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.expand"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.expand", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.a7c05c9e.min.js"></script>
